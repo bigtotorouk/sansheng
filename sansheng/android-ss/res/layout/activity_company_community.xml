@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <com.view.HeadBar
+        android:id="@+id/Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.view.HeadBar>
+
+    <RelativeLayout
+        android:id="@+id/Ly_Banner"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:layout_below="@id/Head_Bar"
+        android:layout_marginTop="-4px" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/ViewPaper_Banner"
+            android:layout_width="fill_parent"
+            android:layout_height="200dip" />
+
+        <com.view.BannerIndicator
+            android:id="@+id/Indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+        </com.view.BannerIndicator>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/Lv_community"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/company_brand_division"
+        android:listSelector="@drawable/item_company_news_bg" >
+    </ListView>
+
+</LinearLayout>

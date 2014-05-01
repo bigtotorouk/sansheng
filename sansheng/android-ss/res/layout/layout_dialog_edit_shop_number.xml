@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="218dip"
+    android:layout_height="125dip"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:layout_width="140dip"
+        android:layout_height="85dip"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:id="@+id/Layout_Number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/Btn_Delete_Number"
+                android:layout_width="34dip"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_shop_add_bg" />
+
+            <EditText
+                android:id="@+id/Et_Number"
+                android:layout_width="65dip"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="0px"
+                android:layout_marginLeft="0px"
+                android:layout_marginTop="0px"
+                android:background="@drawable/dialog_edit_bg"
+                android:focusable="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="0px" />
+
+            <Button
+                android:id="@+id/Btn_Add_Number"
+                android:layout_width="34dip"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_shop_delete_bg" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Btn_Finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Layout_Number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/btn_finish_bg"
+            android:text="完成"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E3E3E3"
+    android:orientation="vertical" >
+
+    <com.view.HeadBar
+        android:id="@+id/Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip" >
+    </com.view.HeadBar>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/Btn_Delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_balance_delivery"
+                    android:text="我要提货"
+                    android:textColor="#D7EBF6"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/Btn_Delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/btn_balance_evaluate"
+                    android:text="发表评论"
+                    android:textColor="#4C4B4C"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/bg_balance_conveyance"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Tv_conveyance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="5dip"
+                    android:text="顺风快递"
+                    android:textColor="#272727"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginTop="3dip"
+                        android:text="运单编号："
+                        android:textColor="#8D8D8D"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Conveyanceno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:text="123154564652"
+                        android:textColor="#3F8FCC"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/bg_balance_delivery"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="报单编号："
+                        android:textColor="#272727"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Balanceno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DB152123132"
+                        android:textColor="#272727"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="30dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="会   员："
+                        android:textColor="#6A6A6A"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_UserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="任秀文"
+                        android:textColor="#6A6A6A"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Userno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="20131773"
+                        android:textColor="#6A6A6A"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:src="@drawable/bg_balance_paid_fgx" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收货人："
+                        android:textColor="#6A6A6A"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_DeliveryName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="任秀文"
+                        android:textColor="#6A6A6A"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Userno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="20131773"
+                        android:textColor="#6A6A6A"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:src="@drawable/bg_balance_paid_fgx" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收货地址："
+                        android:textColor="#6A6A6A"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Delivery_Address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收获地址"
+                        android:textColor="#6A6A6A"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

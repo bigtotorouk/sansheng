@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/Head_Bar"
+        layout="@layout/head_bar" />
+
+    <WebView
+        android:id="@+id/WebView_Tecetnt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/Head_Bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="6px"
+        android:layout_below="@id/Head_Bar"
+        android:background="@drawable/head_shadow" >
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E2E2E2"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/sview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_periods"
+                android:layout_width="fill_parent"
+                android:layout_height="44dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/bg_btnperiod"
+                android:drawableRight="@drawable/periods"
+                android:gravity="left|center_vertical"
+                android:padding="10dip"
+                android:text="第187期（2013-02-22）"
+                android:textColor="#FFFFFF" />
+
+             
+
+            <LinearLayout
+                android:id="@+id/Layout_MyResults_Group"
+                android:layout_width="fill_parent"
+                android:layout_height="110dip"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/Rlayout_MyResults_Group"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_group"
+                    android:paddingLeft="5dip" >
+
+                    <TextView
+                        android:id="@+id/Tv_Group"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="10dip"
+                        android:text="累计40PV复消业绩"
+                        android:textColor="#444444"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_One"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Group"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="20dip"
+                        android:text="0.00"
+                        android:textColor="#35BCDD"
+                        android:textSize="22sp" >
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Rlayout_MyResults_Current"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_group"
+                    android:paddingLeft="5dip" >
+
+                    <TextView
+                        android:id="@+id/Tv_Current"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_weight="1"
+                        android:freezesText="true"
+                        android:text="已使用业绩"
+                        android:textColor="#444444"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Two"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Current"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="20dip"
+                        android:text="0.00"
+                        android:textColor="#35BCDD"
+                        android:textSize="22sp" >
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layout_Results_Retail"
+                android:layout_width="fill_parent"
+                android:layout_height="110dip"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/Rlayout_Results_Retail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_retail"
+                    android:paddingLeft="5dip" >
+
+                    <TextView
+                        android:id="@+id/Tv_Results_Retail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="10dip"
+                        android:text="剩余业绩"
+                        android:textColor="#444444"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Three"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Results_Retail"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="20dip"
+                        android:text="0.00"
+                        android:textColor="#96BB3C"
+                        android:textSize="22sp" >
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Rlayout_MyResults_Proportion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_retail"
+                    android:paddingLeft="5dip" >
+
+                    <TextView
+                        android:id="@+id/Tv_Proportion"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_weight="1"
+                        android:text="累计合格月数"
+                        android:textColor="#444444"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Four"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Proportion"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="20dip"
+                        android:text="0"
+                        android:textColor="#96BB3C"
+                        android:textSize="22sp" >
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+            
+            
+            
+               <LinearLayout
+                android:id="@+id/Layout_MyResults_Group"
+                android:layout_width="fill_parent"
+                android:layout_height="110dip"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/Rlayout_MyResults_Group"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_group"
+                    android:paddingLeft="5dip" >
+
+                    <TextView
+                        android:id="@+id/Tv_Group"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="10dip"
+                        android:text="已使用合格月数"
+                        android:textColor="#444444"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Five"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Group"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="20dip"
+                        android:text="0"
+                        android:textColor="#35BCDD"
+                        android:textSize="22sp" >
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Rlayout_MyResults_Current"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_group"
+                    android:paddingLeft="5dip" >
+
+                    <TextView
+                        android:id="@+id/Tv_Current"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_weight="1"
+                        android:freezesText="true"
+                        android:text="剩余合格月数"
+                        android:textColor="#444444"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Six"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Current"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="20dip"
+                        android:text="0"
+                        android:textColor="#35BCDD"
+                        android:textSize="22sp" >
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/Layout_Picker"
+        android:layout_width="fill_parent"
+        android:layout_height="250dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ccc" >
+
+            <Button
+                android:id="@+id/Btn_Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dip"
+                android:text="关闭" />
+
+            <Button
+                android:id="@+id/Btn_Sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:text="确定" />
+        </RelativeLayout>
+
+        <com.view.WheelView
+            android:id="@+id/WheelView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+        </com.view.WheelView>
+    </RelativeLayout>
+
+</RelativeLayout>

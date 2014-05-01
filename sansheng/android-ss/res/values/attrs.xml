@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Setting">
+        <attr name="head_str" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="Setting">
+        <attr name="tail_str" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="Setting">
+        <attr name="can_check" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="Setting">
+        <attr name="show_arrow" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="Setting">
+        <attr name="item_bg" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="Bind">
+        <attr name="item_text" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="Bind">
+        <attr name="icon_src" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="Bind">
+        <attr name="itemgb" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="Tab">
+        <attr name="select_color" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="Tab">
+        <attr name="select_text_color" format="string"></attr>
+    </declare-styleable>
+    <declare-styleable name="Tab">
+        <attr name="unselect_text_color" format="string"></attr>
+    </declare-styleable>
+    <declare-styleable name="Tab">
+        <attr name="unselect_color" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="Tab">
+        <attr name="selected" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="IconButton">
+        <attr name="btn_icon" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="IconButton">
+        <attr name="btn_text" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="Summary">
+        <attr name="right_text" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="ItemButton">
+        <attr name="selected_color" format="string"></attr>
+    </declare-styleable>
+    <declare-styleable name="ItemButton">
+        <attr name="selected_bg" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="ItemButton">
+        <attr name="unselected_bg" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="ItemButton">
+        <attr name="my_title" format="string"></attr>
+    </declare-styleable>
+
+</resources>

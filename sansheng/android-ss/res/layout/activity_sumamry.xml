@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custome="http://schemas.android.com/apk/res/com.lekoko.sansheng"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e3e3e3"
+    android:orientation="vertical" >
+´
+
+    <com.view.HeadBar
+        android:id="@+id/Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.view.HeadBar>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Head_Bar"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip" >
+
+        <com.view.ShopTypeItem
+            android:id="@+id/Item_Sale"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            custome:head_str="@string/sale"
+            custome:item_bg="@drawable/list_setting_top_bg" >
+        </com.view.ShopTypeItem>
+
+        <com.view.ShopTypeItem
+            android:id="@+id/Item_Pv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Item_Sale"
+            custome:head_str="@string/pv"
+            custome:item_bg="@drawable/list_setting_top_bg" >
+        </com.view.ShopTypeItem>
+    </RelativeLayout>
+
+    <com.view.SumaryView
+        android:id="@+id/SS2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="#fafafa"
+        custome:right_text="@string/next" >
+    </com.view.SumaryView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="6px"
+        android:layout_below="@id/Head_Bar"
+        android:background="@drawable/head_shadow" >
+    </RelativeLayout>
+
+</RelativeLayout>

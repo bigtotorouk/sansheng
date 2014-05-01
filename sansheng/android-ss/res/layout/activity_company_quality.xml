@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#CDCDCD"
+    android:orientation="vertical" >
+
+    <com.view.HeadBar
+        android:id="@+id/Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.view.HeadBar>
+
+    <!-- <ExpandableListView -->
+    <!-- android:id="@+id/Lv_quality" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:layout_below="@id/Head_Bar" -->
+    <!-- android:background="#F0F0F0" > -->
+    <!-- </ExpandableListView> -->
+
+    <ListView
+        android:id="@+id/lv_quality"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/Head_Bar"
+        android:background="#F0F0F0"
+        android:divider="@null" >
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="6px"
+        android:layout_below="@id/Head_Bar"
+        android:background="@drawable/head_shadow" >
+    </RelativeLayout>
+
+</RelativeLayout>

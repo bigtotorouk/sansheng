@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="#ffffff" >
+    
+    <Button
+        android:id="@+id/Btn_companiesNews_return"
+        android:layout_width="48dip"
+        android:layout_height="58dip"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/arrow_rigth" />
+
+    <TextView
+        android:id="@+id/Tv_companiesNews"
+        android:layout_width="wrap_content"
+        android:layout_height="44dip"
+        android:layout_alignBaseline="@+id/Btn_companiesNews_return"
+        android:layout_alignBottom="@+id/Btn_companiesNews_return"
+        android:layout_centerHorizontal="true"
+        android:text="@string/company_news"
+        android:textSize="25sp" />
+	
+    <ImageView 
+        android:id="@+id/Img_companiesNews"
+        android:layout_width="fill_parent"
+        android:layout_height="120dip"
+        android:background="@drawable/u0_normal"
+        android:layout_below="@+id/Tv_companiesNews"/>
+    
+    <TextView 
+        android:id="@+id/Tv_headNewsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+ 	    android:layout_below="@+id/Img_companiesNews"
+ 	    android:paddingTop="10dip"
+ 	    android:paddingLeft="20dip" />
+
+ 	<ListView
+ 	    android:id="@+id/Lv_companiesNews"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_below="@+id/Tv_headNewsTitle" >
+ 	</ListView>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dip"
+        android:background="@drawable/bg_company_produce_lv"
+        android:clickable="false"
+        android:focusable="false"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/Layout_Produce"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dip" >
+
+            <TextView
+                android:id="@+id/Tv_CenterTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:focusable="false"
+                android:text="dfhsdfsjdflsjdlfk"
+                android:textColor="#E98D56"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/Iv_CenterImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:focusable="false"
+                android:src="@drawable/products_arrow1" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Tv_CenterContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layout_Produce"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:text="dfhsdfsjdflsjdlfk"
+            android:textColor="#474747"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

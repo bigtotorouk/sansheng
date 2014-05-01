@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custome="http://schemas.android.com/apk/res/com.lekoko.sansheng"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e3e3e3"
+    android:orientation="vertical" >
+´
+
+    <com.view.HeadBar
+        android:id="@+id/Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.view.HeadBar>
+
+    <RelativeLayout
+        android:id="@+id/Layout_Order"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Head_Bar"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip" >
+
+        <com.view.ShopTypeItem
+            android:id="@+id/Item_Sale"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            custome:head_str="@string/order_self"
+            custome:item_bg="@drawable/list_setting_top_bg" >
+        </com.view.ShopTypeItem>
+
+        <com.view.ShopTypeItem
+            android:id="@+id/Item_Pv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Item_Sale"
+            custome:head_str="@string/order_member"
+            custome:item_bg="@drawable/list_setting_top_bg" >
+        </com.view.ShopTypeItem>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/Et_UserId"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/Layout_Order"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip" />
+
+    <Button
+        android:id="@+id/Btn_Order"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Et_UserId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/btn_room_unselected"
+        android:text="去下单"
+        android:textColor="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="6px"
+        android:layout_below="@id/Head_Bar"
+        android:background="@drawable/head_shadow" >
+    </RelativeLayout>
+
+</RelativeLayout>

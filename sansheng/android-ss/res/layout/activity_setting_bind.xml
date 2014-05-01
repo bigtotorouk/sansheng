@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custome="http://schemas.android.com/apk/res/com.lekoko.sansheng"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_setting"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/Head_Bar"
+        layout="@layout/head_bar" />
+
+    <com.view.BindItem
+        android:id="@+id/Item_Sina"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Head_Bar"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        custome:icon_src="@drawable/sns_weibo"
+        custome:item_text="@string/sina_weibo"
+        custome:itemgb="@drawable/list_setting_top_bg" >
+    </com.view.BindItem>
+
+    <com.view.BindItem
+        android:id="@+id/Item_Tecent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Item_Sina"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        custome:icon_src="@drawable/sns_qq_weibo"
+        custome:item_text="@string/tecetnt_weibo"
+        custome:itemgb="@drawable/list_setting_bottom_bg" >
+    </com.view.BindItem>
+
+    <com.view.BindItem
+        android:id="@+id/Item_qqzone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Item_Tecent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        custome:icon_src="@drawable/sns_qq_zone"
+        custome:item_text="@string/qqzone"
+        custome:itemgb="@drawable/list_setting_bottom_bg" >
+    </com.view.BindItem>
+
+    <com.view.BindItem
+        android:id="@+id/Item_weixin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Item_qqzone"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        custome:icon_src="@drawable/sns_weixin"
+        custome:item_text="@string/weixin"
+        custome:itemgb="@drawable/list_setting_bottom_bg" >
+    </com.view.BindItem>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="6px"
+        android:layout_below="@id/Head_Bar"
+        android:background="@drawable/head_shadow" >
+    </RelativeLayout>
+
+</RelativeLayout>

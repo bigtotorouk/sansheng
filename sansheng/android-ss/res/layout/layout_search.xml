@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_bg_01"
+    android:minHeight="50dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/Layout_Search"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/search_bg_02"
+        android:minHeight="50dip" >
+
+        <ImageView
+            android:id="@+id/Btn_Search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dip"
+            android:background="@drawable/search_icon" />
+
+        <EditText
+            android:id="@+id/Et_Search"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@id/Btn_Search"
+            android:background="#00000000"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="搜索"
+            android:singleLine="true"
+            android:textColor="#6c6868"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Btn_cancel"
+        android:layout_width="40dip"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:background="#ff00ff"
+        android:text="取消"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

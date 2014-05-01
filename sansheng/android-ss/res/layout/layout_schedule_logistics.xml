@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="80dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Tv_Logistics_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/Tv_Logistics_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tv_Logistics_Id"
+        android:text="2" />
+
+    <TextView
+        android:id="@+id/Tv_Bill_Sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tv_Logistics_Status"
+        android:text="3" />
+
+    <TextView
+        android:id="@+id/Tv_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tv_Bill_Sum"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/Btn_Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_delete" />
+
+</RelativeLayout>

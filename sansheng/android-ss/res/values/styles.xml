@@ -1,0 +1,233 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+ 
+    
+    <style name="Theme.TitleBar" parent="Theme.Sherlock">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="@android:style/Theme.NoTitleBar">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="MMListItem">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MMFriendListItem">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MMListCatalog">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff595c61</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">#ffced2d7</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ChoicePreferenceButton">
+        <item name="android:textColor">#ff595c61</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:minWidth">60.0dip</item>
+    </style>
+
+    <style name="MMFontTitleInList">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff595c61</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="MMFontTipInList">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="NOTitleDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Btn_Company_Index" parent="android:style/Theme.Dialog">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">#F0F0F0</item>
+    </style>
+
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/switch_lock</item>
+        <item name="android:minWidth">60dip</item>
+    </style>
+
+    <style name="setting_item_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#222222</item>
+    </style>
+
+    <!-- company_Index -->
+    <style name="Btn_Company_Announcement" parent="android:style/Theme.Dialog">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FCFCFC</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:paddingBottom">10dip</item>
+    </style>
+
+    <style name="Btn_Company_News" parent="android:style/Theme.Dialog">
+        <item name="android:background">@drawable/btn_company_news</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FCFCFC</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:paddingBottom">10dip</item>
+    </style>
+
+    <style name="Btn_Company_Sales" parent="android:style/Theme.Dialog">
+        <item name="android:background">@drawable/btn_company_sales</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FCFCFC</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:paddingBottom">10dip</item>
+    </style>
+
+    <style name="Tv_Company_Titile" parent="android:style/Theme.Dialog">
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Btn_Company_introduction" parent="android:style/Theme.Dialog">
+        <item name="android:background">@drawable/btn_company_introduction</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingBottom">10dip</item>
+    </style>
+
+    <style name="Btn_Company_industry" parent="android:style/Theme.Dialog">
+        <item name="android:background">@drawable/btn_company_industry</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingBottom">10dip</item>
+    </style>
+
+    <style name="Btn_Company_Quality" parent="android:style/Theme.Dialog">
+        <item name="android:background">@drawable/btn_company_quality</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingBottom">10dip</item>
+    </style>
+
+    <style name="Btn_Company_Culture" parent="android:style/Theme.Dialog">
+        <item name="android:background">@drawable/btn_company_culture</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingBottom">10dip</item>
+    </style>
+
+    <style name="Btn_Company_Brands" parent="android:style/Theme.Dialog">
+        <item name="android:background">@drawable/btn_company_brand</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:layout_marginLeft">5dip</item>
+    </style>
+
+    <style name="Btn_Company_Community" parent="android:style/Theme.Dialog">
+        <item name="android:background">@drawable/btn_company_community</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:layout_marginLeft">5dip</item>
+    </style>
+
+    <style name="Btn_Company_Histoty" parent="android:style/Theme.Dialog">
+        <item name="android:background">@drawable/btn_company_historical</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingBottom">10dip</item>
+    </style>
+
+    <style name="Btn_Company_Honor" parent="android:style/Theme.Dialog">
+        <item name="android:background">@drawable/btn_company_honor</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:layout_marginLeft">5dip</item>
+    </style>
+
+    <style name="Btn_Company_Null" parent="android:style/Theme.Dialog">
+        <item name="android:background">@drawable/company_info_null</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:layout_marginLeft">5dip</item>
+    </style>
+
+    <!-- company_Brand -->
+    <style name="Tv_Company_BrandTitle" parent="android:style/Theme.Dialog">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:layout_marginTop">15dip</item>
+        <item name="android:layout_marginBottom">5dip</item>
+    </style>
+
+    <style name="Tv_Company_BrandContent" parent="android:style/Theme.Dialog">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:layout_marginRight">15dip</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+    </style>
+
+    <!-- start bar  style -->
+    <style name="Level_Start_Bar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/start_bar_bg</item>
+        <item name="android:minHeight">28px</item>
+        <item name="android:maxHeight">28px</item>
+    </style>
+
+</resources>

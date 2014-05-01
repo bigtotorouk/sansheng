@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout3"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btn_periods"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:text="第187期（2013-02-22）"
+        android:gravity="left|center_vertical"
+        android:drawableRight="@drawable/periods"
+        android:background="@drawable/bg_btnperiod"
+        android:padding="10dip"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:minHeight="80dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip" >
+
+        <TextView
+            android:id="@+id/Tv_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dip"
+            android:layout_marginTop="5dip"
+            android:text="titilelovenewssloven"
+            android:textColor="#030303"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/Tv_Title"
+            android:layout_marginTop="5dip"
+            android:text="2013-2-4"
+            android:textColor="#CDCDCD" />
+
+        <ImageView
+            android:id="@+id/Img_Bg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv_Title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="15dip"
+            android:background="#ff00ff"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Img_Bg" >
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:paddingRight="20dip"
+                android:text="dfhsdhfshdfhsdhfjdddddddddddddffffffffffffffffdd"
+                android:textColor="#CDCDCD" />
+
+            <Button
+                android:id="@+id/Btn_Detail"
+                android:layout_width="8dip"
+                android:layout_height="14dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/company_promotion_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/Img_Bg"
+            android:layout_alignRight="@id/Img_Bg"
+            android:layout_below="@id/Tv_Title"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/company_brand_division" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="55dip"
+    android:background="@drawable/head_bar_bg" >
+
+    <ImageButton
+        android:id="@+id/Btn_Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_head_bar_back" />
+
+    <TextView
+        android:id="@+id/Tv_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/schedule_alert"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/Btn_Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Btn_Back"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:text="添加"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/Img_Right"
+        android:layout_width="45dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Btn_Back"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_ok_bg"
+        android:visibility="gone" />
+
+</RelativeLayout>

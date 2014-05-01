@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" >
+
+        <RelativeLayout
+            android:id="@+id/Layout_Four"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/Tv_Product_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:text="订购商品"
+                android:textColor="#222222"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip" >
+
+            <TextView
+                android:id="@+id/Tv_Total_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:text="￥851.23"
+                android:textColor="#ff0000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/Tv_Total_Pv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Tv_Total_Price"
+                android:layout_marginLeft="20dip"
+                android:text="100.00pv"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:layout_alignParentTop="true"
+            android:background="#ee6d20" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:background="#e2e2e2"
+        android:minHeight="70dip" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip" >
+
+            <LinearLayout
+                android:id="@+id/Layout_Day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="12dip"
+                    android:layout_height="12dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ico_clock" />
+
+                <TextView
+                    android:id="@+id/Tv_Day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:text="23"
+                    android:textColor="#222222" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Tv_Custome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Layout_Day"
+                android:text="122"
+                android:textColor="#222222" />
+
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip" >
+
+            <Button
+                android:id="@+id/Btn_Delete"
+                android:layout_width="28dip"
+                android:layout_height="28dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/ico_delete" />
+
+            <Button
+                android:id="@+id/Btn_SMS"
+                android:layout_width="29dip"
+                android:layout_height="29dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@id/Btn_Delete"
+                android:background="@drawable/ico_msg" >
+            </Button>
+
+            <Button
+                android:id="@+id/Btn_Call"
+                android:layout_width="29dip"
+                android:layout_height="29dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@id/Btn_SMS"
+                android:background="@drawable/ico_phone"
+                android:focusable="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

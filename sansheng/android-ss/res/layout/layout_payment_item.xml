@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AEAEAE"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/bg_balance_type0"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip" >
+
+            <TextView
+                android:id="@+id/Tv_BalanceNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报单编号 ："
+                android:textColor="#696969"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/Tv_Balanceno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Tv_BalanceNo"
+                android:text="DB2013011900053"
+                android:textColor="#696969"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/Tv_UserNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Tv_BalanceNo"
+                android:layout_marginTop="15dip"
+                android:text="会员编号 ："
+                android:textColor="#696969"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/Tv_Userno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Tv_Balanceno"
+                android:layout_marginTop="15dip"
+                android:layout_toRightOf="@id/Tv_UserNo"
+                android:text="20031773"
+                android:textColor="#696969"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/Tv_UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Tv_Balanceno"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="15dip"
+                android:layout_toRightOf="@id/Tv_Userno"
+                android:text="任秀文"
+                android:textColor="#696969"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/Tv_ShopNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Tv_UserNo"
+                android:layout_marginTop="15dip"
+                android:text="店铺编号 ："
+                android:textColor="#696969"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/Tv_Shopno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Tv_Userno"
+                android:layout_marginTop="15dip"
+                android:layout_toRightOf="@id/Tv_ShopNo"
+                android:text="nba001"
+                android:textColor="#696969"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/Tv_Allmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Tv_ShopNo"
+                android:layout_marginTop="15dip"
+                android:text="￥851.50"
+                android:textColor="#FF3300"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/Tv_Allfg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Tv_Shopno"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="15dip"
+                android:layout_toRightOf="@id/Tv_Allmoney"
+                android:text="/"
+                android:textColor="#696969"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/Tv_AllPv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Tv_Shopno"
+                android:layout_marginTop="15dip"
+                android:layout_toRightOf="@id/Tv_Allfg"
+                android:text="100.00pv"
+                android:textColor="#696969"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout_Opra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dip"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

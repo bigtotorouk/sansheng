@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical" >
+
+    <com.view.HeadBar
+        android:id="@+id/Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.view.HeadBar>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/Tv_Balance_Logistics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="物流服务："
+                    android:textColor="#2B2B2B"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/Img_Star1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:src="@drawable/img_star" />
+
+                <ImageView
+                    android:id="@+id/Img_Star2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:src="@drawable/img_star" />
+
+                <ImageView
+                    android:id="@+id/Img_Star3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:src="@drawable/img_star" />
+
+                <ImageView
+                    android:id="@+id/Img_Star4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:src="@drawable/img_star" />
+
+                <ImageView
+                    android:id="@+id/Img_Star5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:src="@drawable/img_airstar" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#E1E1E1" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip" >
+
+                    <ImageView
+                        android:id="@+id/Img_ShopPic1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/bg_img_shop" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_Name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:layout_toRightOf="@id/Img_ShopPic1"
+                        android:text="舒博兰氨基酸洁面皂"
+                        android:textColor="#111111"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_Pirc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Shop_Name1"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="7dip"
+                        android:layout_toRightOf="@+id/Img_ShopPic1"
+                        android:text="￥188.00"
+                        android:textColor="#FF1F1F"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_PV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Shop_Name1"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="7dip"
+                        android:layout_toRightOf="@+id/Tv_Shop_Pirc1"
+                        android:text="78PV"
+                        android:textColor="#595959"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_ShopNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Shop_Pirc1"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="3dip"
+                        android:layout_toRightOf="@+id/Img_ShopPic1"
+                        android:text="RWPVE"
+                        android:textColor="#595959"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/Tv_Balance_Shop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="商品品质："
+                            android:textColor="#2B2B2B"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/Img_Shop_Star1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:src="@drawable/img_star" />
+
+                        <ImageView
+                            android:id="@+id/Img_Shop_Star2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:src="@drawable/img_star" />
+
+                        <ImageView
+                            android:id="@+id/Img_Shop_Star3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:src="@drawable/img_star" />
+
+                        <ImageView
+                            android:id="@+id/Img_Shop_Star4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:src="@drawable/img_star" />
+
+                        <ImageView
+                            android:id="@+id/Img_Shop_Star5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:src="@drawable/img_airstar" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Tv_Evaluate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:background="@drawable/bg_balance_tvevaluate"
+                        android:hint="写点什么吧" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:background="#E1E1E1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip" >
+
+                        <ImageView
+                            android:id="@+id/Img_ShopPic1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:background="@drawable/bg_img_shop" />
+
+                        <TextView
+                            android:id="@+id/Tv_Shop_Name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="5dip"
+                            android:layout_toRightOf="@id/Img_ShopPic1"
+                            android:text="舒博兰氨基酸洁面皂"
+                            android:textColor="#111111"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/Tv_Shop_Pirc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Tv_Shop_Name1"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="7dip"
+                            android:layout_toRightOf="@+id/Img_ShopPic1"
+                            android:text="￥188.00"
+                            android:textColor="#FF1F1F"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/Tv_Shop_PV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Tv_Shop_Name1"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="7dip"
+                            android:layout_toRightOf="@+id/Tv_Shop_Pirc1"
+                            android:text="78PV"
+                            android:textColor="#595959"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/Tv_ShopNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Tv_Shop_Pirc1"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="3dip"
+                            android:layout_toRightOf="@+id/Img_ShopPic1"
+                            android:text="RWPVE"
+                            android:textColor="#595959"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dip"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/Tv_Balance_Shop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="商品品质："
+                                android:textColor="#2B2B2B"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:id="@+id/Img_Shop_Star1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:src="@drawable/img_star" />
+
+                            <ImageView
+                                android:id="@+id/Img_Shop_Star2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:src="@drawable/img_star" />
+
+                            <ImageView
+                                android:id="@+id/Img_Shop_Star3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:src="@drawable/img_star" />
+
+                            <ImageView
+                                android:id="@+id/Img_Shop_Star4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:src="@drawable/img_star" />
+
+                            <ImageView
+                                android:id="@+id/Img_Shop_Star5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:src="@drawable/img_airstar" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/Tv_Evaluate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dip"
+                            android:background="@drawable/bg_balance_tvevaluate"
+                            android:hint="写点什么吧" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Btn_Submit_Evaluate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/btn_balance_submit_evaluate" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E3E3E3"
+    android:orientation="vertical" >
+
+    <com.view.HeadBar
+        android:id="@+id/Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.view.HeadBar>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/bg_balance_delivery"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip" >
+
+                    <CheckBox
+                        android:id="@+id/Chk_AllSelect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/chk_allselect" />
+
+                    <TextView
+                        android:id="@+id/Tv_Wait_Shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginTop="7dip"
+                        android:layout_toRightOf="@+id/Chk_AllSelect"
+                        android:text="待领商品"
+                        android:textColor="#111111"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/Btn_Balance_Delivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/btn_balance_delivery" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip" >
+
+                    <CheckBox
+                        android:id="@+id/Chk_Dx1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dip"
+                        android:background="@drawable/chk_allselect"
+                        android:checked="true" />
+
+                    <ImageView
+                        android:id="@+id/Img_ShopPic1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toRightOf="@+id/Chk_Dx1"
+                        android:background="@drawable/bg_img_shop" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_Name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:layout_toRightOf="@id/Img_ShopPic1"
+                        android:text="舒博兰氨基酸洁面皂"
+                        android:textColor="#111111"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_Num1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dip"
+                        android:text="x1"
+                        android:textColor="#111111"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_Pirc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Shop_Name1"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="7dip"
+                        android:layout_toRightOf="@+id/Img_ShopPic1"
+                        android:text="￥188.00"
+                        android:textColor="#FF1F1F"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_PV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Shop_Name1"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="7dip"
+                        android:layout_toRightOf="@+id/Tv_Shop_Pirc1"
+                        android:text="78PV"
+                        android:textColor="#595959"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_ShopNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Shop_Pirc1"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="3dip"
+                        android:layout_toRightOf="@+id/Img_ShopPic1"
+                        android:text="RWPVE"
+                        android:textColor="#595959"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bg_balance_delivery_fgx" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip" >
+
+                    <CheckBox
+                        android:id="@+id/Chk_Dx2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dip"
+                        android:background="@drawable/chk_allselect"
+                        android:checked="true" />
+
+                    <ImageView
+                        android:id="@+id/Img_ShopPic2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toRightOf="@+id/Chk_Dx2"
+                        android:background="@drawable/bg_img_shop" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_Name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:layout_toRightOf="@id/Img_ShopPic2"
+                        android:text="舒博兰氨基酸洁面皂"
+                        android:textColor="#111111"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_Num2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:layout_toRightOf="@id/Tv_Shop_Name2"
+                        android:text="x1"
+                        android:textColor="#111111"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_Pirc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Shop_Name2"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="7dip"
+                        android:layout_toRightOf="@+id/Img_ShopPic2"
+                        android:text="￥188.00"
+                        android:textColor="#FF1F1F"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_PV2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Shop_Name2"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="7dip"
+                        android:layout_toRightOf="@+id/Tv_Shop_Pirc2"
+                        android:text="78PV"
+                        android:textColor="#595959"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_ShopNo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Shop_Pirc2"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="3dip"
+                        android:layout_toRightOf="@+id/Img_ShopPic2"
+                        android:text="RWPVE"
+                        android:textColor="#595959"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/bg_balance_delivery"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip" >
+
+                    <TextView
+                        android:id="@+id/Tv_Wait_Shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginTop="7dip"
+                        android:text="已领商品"
+                        android:textColor="#111111"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="7dip" >
+
+                        <TextView
+                            android:id="@+id/Tv_Shop_Yl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥188.00"
+                            android:textColor="#FF1F1F"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/Tv_Shop_YlPv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:text="78PV"
+                            android:textColor="#595959"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip" >
+
+                    <ImageView
+                        android:id="@+id/Img_ShopPic1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/bg_img_shop" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_Name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:layout_toRightOf="@id/Img_ShopPic1"
+                        android:text="舒博兰氨基酸洁面皂"
+                        android:textColor="#111111"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_Num1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dip"
+                        android:text="x1"
+                        android:textColor="#111111"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_Pirc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Shop_Name1"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="7dip"
+                        android:layout_toRightOf="@+id/Img_ShopPic1"
+                        android:text="￥188.00"
+                        android:textColor="#FF1F1F"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_PV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Shop_Name1"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="7dip"
+                        android:layout_toRightOf="@+id/Tv_Shop_Pirc1"
+                        android:text="78PV"
+                        android:textColor="#595959"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_ShopNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Shop_Pirc1"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="3dip"
+                        android:layout_toRightOf="@+id/Img_ShopPic1"
+                        android:text="RWPVE"
+                        android:textColor="#595959"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Titme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/Tv_Shop_PV"
+                        android:layout_marginTop="3dip"
+                        android:text="2013-01-05"
+                        android:textColor="#595959"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bg_balance_delivery_fgx" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip" >
+
+                    <ImageView
+                        android:id="@+id/Img_ShopPic2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:background="@drawable/bg_img_shop" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_Name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:layout_toRightOf="@id/Img_ShopPic2"
+                        android:text="舒博兰氨基酸洁面皂"
+                        android:textColor="#111111"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_Num2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:layout_toRightOf="@id/Tv_Shop_Name2"
+                        android:text="x1"
+                        android:textColor="#111111"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_Pirc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Shop_Name2"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="7dip"
+                        android:layout_toRightOf="@+id/Img_ShopPic2"
+                        android:text="￥188.00"
+                        android:textColor="#FF1F1F"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_Shop_PV2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Shop_Name2"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="7dip"
+                        android:layout_toRightOf="@+id/Tv_Shop_Pirc2"
+                        android:text="78PV"
+                        android:textColor="#595959"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Tv_ShopNo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tv_Shop_Pirc2"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="3dip"
+                        android:layout_toRightOf="@+id/Img_ShopPic2"
+                        android:text="RWPVE"
+                        android:textColor="#595959"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="10dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="10dip" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Layout_Home"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="75dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/custom_item_single_head"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:inputType="number"
+                android:text="电话 1"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/custom_item_single_body" >
+
+            <EditText
+                android:id="@+id/Et_Home"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dip"
+                android:background="#00ffffff"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#222222" />
+
+            <ImageView
+                android:id="@+id/Btn_DELETE_HOME"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/btn_d" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

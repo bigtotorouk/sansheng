@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custome="http://schemas.android.com/apk/res/com.lekoko.sansheng"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e3e3e3"
+    android:orientation="vertical" >
+
+    <com.view.HeadBar
+        android:id="@+id/Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.view.HeadBar>
+
+    <LinearLayout
+        android:id="@+id/Layout_Head"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/Head_Bar"
+        android:orientation="horizontal" >
+
+        <com.view.BtnTab
+            android:id="@+id/Btn_Lin"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="零售"
+            android:textSize="15sp"
+            custome:select_color="@drawable/tab_selected_bg"
+            custome:selected="true"
+            custome:unselect_color="@drawable/tab_unselect_bg" />
+
+        <com.view.BtnTab
+            android:id="@+id/Btn_Fu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="复消"
+            android:textSize="15sp"
+            custome:select_color="@drawable/tab_selected_bg"
+            custome:unselect_color="@drawable/tab_unselect_bg" />
+    </LinearLayout>
+
+    <com.view.SumaryView
+        android:id="@+id/SS"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="#fafafa" >
+    </com.view.SumaryView>
+
+    <ListView
+        android:id="@+id/Lv_Shop"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/SS"
+        android:layout_below="@id/Layout_Head"
+        android:divider="@drawable/division_sche"
+        android:dividerHeight="2px" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/Layout_alert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Layout_Head"
+        android:layout_marginTop="55dip" >
+
+        <TextView
+            android:id="@+id/Tv_Car_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="您的购物车还没有复消商品"
+            android:textColor="#030303" />
+
+        <Button
+            android:id="@+id/Btn_Back_Shop"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/Tv_Car_alert"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/btn_room_unselected"
+            android:text="去添加商品吧"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="6px"
+        android:layout_below="@id/Head_Bar"
+        android:background="@drawable/head_shadow" >
+    </RelativeLayout>
+
+</RelativeLayout>

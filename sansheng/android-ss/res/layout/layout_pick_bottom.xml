@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/Layout_Head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="#f0f0f0" >
+
+        <ImageView
+            android:id="@+id/img_shop"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/img_shop" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:layout_marginRight="15dip"
+            android:layout_toRightOf="@id/img_shop" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" >
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/Tv_Pv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/Tv_Price"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/Tv_Price"
+                android:text="78pv"
+                android:textColor="#4f4f4f"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/Tv_Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dip"
+                android:text="WR402"
+                android:textColor="#a5a5a5"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/Tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="5dip"
+                android:text="123"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/Tv_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/Tv_Number"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="￥200"
+                android:textColor="#ff0000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/Et_Number"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/et_shop_number"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#666666"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/Tv_Count"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="X 1"
+                android:textColor="#666666" />
+
+            <ImageButton
+                android:id="@+id/Btn_Delete"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/Et_Number"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/btn_shop_car_delete"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="12dip"
+        android:layout_below="@id/Layout_Head"
+        android:background="@drawable/payment_bottom_bg_2" >
+    </RelativeLayout>
+
+</RelativeLayout>

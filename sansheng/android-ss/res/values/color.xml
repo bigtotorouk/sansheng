@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="contact_item_unselect">#2e96df</color>
+    <color name="contact_item_selected">#7ed4ff</color>
+    <color name="contact_item_text_color">#4f86ad</color>
+
+    <!-- Index -->
+    <color name="category_text_color">#222222</color>
+    <color name="head_bar_bg">#ee6d20</color>
+    <color name="btn_log_out_unpress">#ac0808</color>
+    <color name="btn_log_out_press">#820707</color>
+    <color name="btn_setting_unpress">#f6f6f6</color>
+    <color name="btn_setting_press">#ccc</color>
+    <color name="selected_text_color">#000000</color>
+    <color name="unselected_text_color">#ff00ff</color>
+    <!--
+    <color name="unselected_color">#cccccc</color> 
+    <color name="selected_color">#00ffffff</color>
+    -->
+    <color name="trans">#00ffffff</color>
+    <color name="selected_color">#ffffff</color>
+    <color name="unselected_color">#00cccccc</color>
+    <color name="c_default">#ffffff</color>
+    <color name="c_one">#ff7e33</color>
+
+    <!-- company -->
+    <color name="company_news_unselect">#F0F0F0</color>
+    <color name="company_news_selected">#F0F0F0</color>
+
+</resources>

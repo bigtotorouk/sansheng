@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#dddddd"
+    android:minHeight="190dip"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/Layout_One"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/Img_One"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/Tv_Title_One"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Img_One"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:singleLine="true"
+            android:text="特级御坊堂海狗丸还够完丸还够完丸还够完"
+            android:textColor="#222222"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/Tv_Price_One"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv_Title_One"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="10dip"
+            android:text="￥4052"
+            android:textColor="#ff0000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/Tv_Pv_One"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv_Title_One"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@id/Tv_Price_One"
+            android:text="764pv"
+            android:textColor="#222222"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Layout_Two"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/Img_Two"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/Tv_Title_Two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Img_Two"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:singleLine="true"
+            android:text="特级御坊堂海狗丸还够完丸还够完丸还够完"
+            android:textColor="#222222"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/Tv_Price_Two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv_Title_Two"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="10dip"
+            android:text="￥4052"
+            android:textColor="#ff0000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/Tv_Pv_Tow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv_Title_Two"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@id/Tv_Price_Two"
+            android:text="764pv"
+            android:textColor="#222222"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</LinearLayout>

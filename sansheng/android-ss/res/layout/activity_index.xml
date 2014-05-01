@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_index" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:id="@+id/HeadBar"
+            android:layout_width="fill_parent"
+            android:layout_height="94dip"
+            android:background="#ef7121" >
+
+            <ImageView
+                android:id="@+id/Btn_icon"
+                android:layout_width="146dip"
+                android:layout_height="50dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dip"
+                android:background="@drawable/login_logo" />
+
+            <RelativeLayout
+                android:id="@+id/Btn_Setting"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/Btn_icon"
+                android:layout_marginRight="20dip" >
+
+                <ImageView
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/img_setting" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RL_Row1"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:layout_below="@id/HeadBar" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <com.view.CategoryView
+                        android:id="@+id/Btn_Company_Info"
+                        android:layout_width="80dip"
+                        android:layout_height="88dip"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_index_companyinfo_bg"
+                        android:text="@string/company_advisory"
+                        android:textColor="@color/category_text_color" >
+                    </com.view.CategoryView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Btn_Company_Info"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dip"
+                        android:text="@string/company_advisory"
+                        android:textColor="@color/category_text_color" >
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <com.view.CategoryView
+                        android:id="@+id/Btn_Achivement"
+                        android:layout_width="80dip"
+                        android:layout_height="88dip"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_index_achrivement_bg"
+                        android:text="@string/achivevements_advisory"
+                        android:textColor="@color/category_text_color" >
+                    </com.view.CategoryView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Btn_Achivement"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dip"
+                        android:text="@string/achivevements_advisory"
+                        android:textColor="@color/category_text_color" >
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RL_Row2"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:layout_below="@id/RL_Row1" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <com.view.CategoryView
+                        android:id="@+id/Btn_Shooping"
+                        android:layout_width="80dip"
+                        android:layout_height="88dip"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_index_shopping_bg"
+                        android:text="@string/online_shopping"
+                        android:textColor="@color/category_text_color" >
+                    </com.view.CategoryView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Btn_Shooping"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dip"
+                        android:text="@string/online_shopping"
+                        android:textColor="@color/category_text_color" >
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <com.view.CategoryView
+                        android:id="@+id/Btn_Bill_Query"
+                        android:layout_width="80dip"
+                        android:layout_height="88dip"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_index_querybill_bg"
+                        android:text="@string/bill_query"
+                        android:textColor="@color/category_text_color" >
+                    </com.view.CategoryView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Btn_Bill_Query"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dip"
+                        android:text="@string/bill_query"
+                        android:textColor="@color/category_text_color" >
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RL_Row3"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:layout_below="@id/RL_Row2" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <com.view.CategoryView
+                        android:id="@+id/Btn_Custome_Manager"
+                        android:layout_width="80dip"
+                        android:layout_height="88dip"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_index_custome_bg"
+                        android:textColor="@color/category_text_color" >
+                    </com.view.CategoryView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Btn_Custome_Manager"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dip"
+                        android:text="@string/custom_mamager"
+                        android:textColor="@color/category_text_color" >
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <com.view.CategoryView
+                        android:id="@+id/Btn_Schedule_Alert"
+                        android:layout_width="80dip"
+                        android:layout_height="88dip"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_index_schedule_bg"
+                        android:text="@string/schedule_alert"
+                        android:textColor="@color/category_text_color" >
+                    </com.view.CategoryView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Btn_Schedule_Alert"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dip"
+                        android:text="@string/schedule_alert"
+                        android:textColor="@color/category_text_color" >
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

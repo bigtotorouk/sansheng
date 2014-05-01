@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/address_bg" >
+
+        <RelativeLayout
+            android:id="@+id/Layout_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/Tv_Row1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="上海  上海市 浦东新区"
+                android:textColor="#444444"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/Tv_Row2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Tv_Row1"
+                android:layout_marginTop="5dip"
+                android:text="局门路550号8号桥3期7楼"
+                android:textColor="#444444"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/Tv_Row3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Tv_Row2"
+                android:layout_marginTop="5dip"
+                android:text="认xxx  135xxxxxxx"
+                android:textColor="#444444"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="9dip"
+                android:layout_height="13dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/address_arrow" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/Line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Layout_address"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/address_line" />
+
+        <RelativeLayout
+            android:id="@+id/Layout_Default"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/Line" >
+
+            <ImageView
+                android:id="@+id/Img_Selected"
+                android:layout_width="22dip"
+                android:layout_height="23dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dip"
+                android:background="@drawable/img_address_unselect" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@id/Img_Selected"
+                android:text="设为默认"
+                android:textColor="#222222"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/Btn_Delete"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_address_delete" />
+
+            <Button
+                android:id="@+id/Btn_Edit"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@id/Btn_Delete"
+                android:background="@drawable/btn_address_edit" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

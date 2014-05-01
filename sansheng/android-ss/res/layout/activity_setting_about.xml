@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_setting_about"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/Head_Bar"
+        layout="@layout/head_bar" />
+
+    <ImageView
+        android:id="@+id/Img_Icon"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dip"
+        android:background="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/Tv_Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Img_Icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:text="@string/sansheng_biz_helper"
+        android:textColor="#222222"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Tv_Version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tv_Icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:text="@string/version"
+        android:textColor="#666666"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv_Version"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/company_value"
+        android:lineSpacingExtra="5dip"
+        android:textColor="#222222"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:lineSpacingExtra="5dip"
+        android:text="@string/all_rigth"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="6px"
+        android:layout_below="@id/Head_Bar"
+        android:background="@drawable/head_shadow" >
+    </RelativeLayout>
+
+</RelativeLayout>

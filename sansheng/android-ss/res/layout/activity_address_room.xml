@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custome="http://schemas.android.com/apk/res/com.lekoko.sansheng"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e3e3e3"
+    android:orientation="vertical" >
+
+    <com.view.HeadBar
+        android:id="@+id/Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.view.HeadBar>
+
+    <RelativeLayout
+        android:id="@+id/Layout_Room"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Head_Bar"
+        android:background="@drawable/room_search_bg"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/Layotu_Name"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="80dip"
+                android:background="@drawable/room_input_bg"
+                android:padding="4dip" >
+
+                <EditText
+                    android:id="@+id/Et_Number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:background="#00ffffff"
+                    android:hint="输入工作室编号"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:text="nba001" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Layout_ET2"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_below="@id/Layotu_Name"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="80dip"
+                android:layout_marginTop="10dip"
+                android:padding="4dip"
+                android:background="@drawable/room_input_bg" >
+
+                <EditText
+                    android:id="@+id/Et_Name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:background="#00ffffff"
+                    android:hint="店长姓名"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:text="不能发货，公司内部测试用" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/Btn_Search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/Layout_ET2"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/Layotu_Name"
+                android:layout_centerVertical="true"
+                android:background="@drawable/add_room_bg"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Layout_Result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Layout_Room"
+        android:layout_marginTop="10dip" >
+
+        <ImageView
+            android:id="@+id/Img_Room"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_marginLeft="20dip"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/Tv_Room_Master"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv_Room_Master"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@id/Img_Room"
+            android:text="店长："
+            android:textColor="#222222"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/Tv_Room_Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv_Room_Master"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/Img_Room"
+            android:layout_marginRight="10dip"
+            android:text="电话:"
+            android:textColor="#222222"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/Tv_Room_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tv_Room_Phone"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@id/Img_Room"
+            android:text="地址:"
+            android:textColor="#222222"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Btn_Sure"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_below="@id/Layout_Result"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:textSize="17sp"
+        android:background="@drawable/btn_room_unselected"
+        android:text="确定"
+        android:textColor="#ffffff" />
+
+    <!--
+         <Button
+        android:id="@+id/Btn_Selected"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_below="@id/Layout_Result"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:textColor="#ffffff"
+        android:background="@drawable/btn_room_unselected"
+        android:text="搜索" />
+    -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="6px"
+        android:layout_below="@id/Head_Bar"
+        android:background="@drawable/head_shadow" >
+    </RelativeLayout>
+
+</RelativeLayout>

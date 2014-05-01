@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custome="http://schemas.android.com/apk/res/com.lekoko.sansheng"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <com.view.HeadBar
+        android:id="@+id/Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.view.HeadBar>
+
+    <com.view.SearchView
+        android:id="@+id/SearchView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Head_Bar"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+    </com.view.SearchView>
+
+    <RelativeLayout
+        android:id="@+id/Layout_Bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true" >
+
+        <com.view.BottomButton
+            android:id="@+id/Btn_Search"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            custome:btn_icon="@drawable/icon_sync"
+            custome:btn_text="@string/sync" >
+        </com.view.BottomButton>
+    </RelativeLayout>
+
+    <com.view.ListViewSearch
+        android:id="@+id/ListView_Custome"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/Layout_Bottom"
+        android:layout_below="@id/SearchView"
+        android:layout_marginTop="-4dip"
+        android:background="#ededed"
+        android:cacheColorHint="#00000000"
+        android:divider="@null" >
+    </com.view.ListViewSearch>
+
+    <ListView
+        android:id="@+id/Lv_Search"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/Layout_Bottom"
+        android:layout_below="@id/SearchView"
+        android:layout_marginTop="-4dip"
+        android:background="#ededed"
+        android:cacheColorHint="#ffffffff"
+        android:divider="@null"
+        android:visibility="invisible" >
+    </ListView>
+
+    <com.view.SideBar
+        android:id="@+id/sideBar"
+        android:layout_width="20dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/SearchView"
+        android:layout_marginBottom="50dip"
+        android:layout_marginTop="-5dip"
+        android:background="#EEEEEE" >
+    </com.view.SideBar>
+
+    <TextView
+        android:id="@+id/alphaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/show_head_toast_bg"
+        android:gravity="center"
+        android:maxWidth="70dip"
+        android:minWidth="70dip"
+        android:padding="10dip"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="6px"
+        android:layout_below="@id/Head_Bar"
+        android:background="@drawable/head_shadow" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="6px"
+        android:layout_below="@id/Head_Bar"
+        android:background="@drawable/head_shadow" >
+    </RelativeLayout>
+
+</RelativeLayout>

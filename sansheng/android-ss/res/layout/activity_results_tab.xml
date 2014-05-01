@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custome="http://schemas.android.com/apk/res/com.lekoko.sansheng"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E2E2E2"
+    android:orientation="vertical" >
+
+    <com.view.HeadBar
+        android:id="@+id/Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.view.HeadBar>
+
+    <LinearLayout
+        android:id="@+id/Layout_Tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Head_Bar"
+        android:orientation="horizontal" >
+
+        <com.view.BtnTab
+            android:id="@+id/Btn_MyResults"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="我的业绩"
+            android:textSize="15sp"
+            custome:select_color="@drawable/tab_selected_bg"
+            custome:selected="true"
+            custome:unselect_color="@drawable/tab_unselect_bg" />
+
+        <com.view.BtnTab
+            android:id="@+id/Btn_Retail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="零售累计池"
+            android:textSize="15sp"
+            custome:select_color="@drawable/tab_selected_bg"
+            custome:selected="false"
+            custome:unselect_color="@drawable/tab_unselect_bg" />
+
+        <com.view.BtnTab
+            android:id="@+id/Btn_Apo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="复消累计池"
+            android:textSize="15sp"
+            custome:select_color="@drawable/tab_selected_bg"
+            custome:selected="false"
+            custome:unselect_color="@drawable/tab_unselect_bg" />
+
+        <!-- android:background="@drawable/btn_noselect" -->
+
+    </LinearLayout>
+
+    <com.view.StaticViewPager
+        android:id="@+id/ViewPaper_Content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/Layout_Tab" >
+    </com.view.StaticViewPager>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="6px"
+        android:layout_below="@id/Head_Bar"
+        android:background="@drawable/head_shadow" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="6px"
+        android:layout_below="@id/Head_Bar"
+        android:background="@drawable/head_shadow" >
+    </RelativeLayout>
+
+</RelativeLayout>

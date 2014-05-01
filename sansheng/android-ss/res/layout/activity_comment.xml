@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custome="http://schemas.android.com/apk/res/com.lekoko.sansheng"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E2E2E2"
+    android:orientation="vertical" >
+
+    <com.view.HeadBar
+        android:id="@+id/HeadBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.view.HeadBar>
+
+    <RelativeLayout
+        android:id="@+id/Layout_wuliu"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_below="@id/HeadBar"
+        android:background="#f0f0f0"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/Lable_Shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:text="物流服务:"
+            android:textColor="#222222"
+            android:textSize="17sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_L"
+            style="@style/Level_Start_Bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/Lable_Shop"
+            android:clickable="false"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_Di"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_below="@id/Layout_wuliu"
+        android:background="@drawable/division_sche"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/Lv_Comment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/LL_Di"
+        android:divider="@null" >
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_below="@id/HeadBar"
+        android:background="@drawable/head_shadow" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="6px"
+        android:layout_below="@id/Head_Bar"
+        android:background="@drawable/head_shadow" >
+    </RelativeLayout>
+
+</RelativeLayout>

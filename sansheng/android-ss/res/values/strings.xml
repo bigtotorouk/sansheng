@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">三生商务助手</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Index -->
+    <string name="index_title">三生商务助手</string>
+    <string name="company_advisory">公司资讯</string>
+    <string name="achivevements_advisory">业绩查询</string>
+    <string name="custom_mamager">客户管理</string>
+    <!-- <string name="schedule_alert">日程提醒</string> -->
+    <string name="online_shopping">在线购物</string>
+    <string name="bill_query">报单查询</string>
+    <!-- schedule -->
+    <string name="visit_remaind">拜访提醒</string>
+    <string name="brithday_remaind">生日提醒</string>
+    <string name="other_remaind">日程安排</string>
+    <string name="visit_custome">拜访客户</string>
+    <string name="appoint_date">指定日期</string>
+    <string name="finish">完成</string>
+    <string name="title_schedule_edit">日程编辑</string>
+    <string name="loading">正在载入中</string>
+    <string name="alert">提示</string>
+    <string name="alert_item">提醒事项</string>
+    <string name="schedule_arrange">日程安排</string>
+    <string name="news_title">新闻标题</string>
+    <!-- schedule -->
+    <string name="alert_please_warm_content">请输入提示内容</string>
+    <string name="alert_please_select_custome">请选择一个客户</string>
+    <string name="alert_please_select_date">请输入日期</string>
+    <string name="btn_call">打电话</string>
+    <string name="btn_sms">发短信</string>
+    <string name="schedule_alert">日程提醒</string>
+    <string name="schedule_edit">日程编辑</string>
+    <string name="delete">删除</string>
+    <string name="sure_delete">确定删除</string>
+
+    <!-- companies -->
+    <string name="company_info">公司资讯</string>
+    <string name="latest_news">最新公告</string>
+    <string name="company_news">公司新闻</string>
+    <string name="hot_promotions">热点促销</string>
+    <string name="company_background">公司背景</string>
+    <string name="company_Indroduction">公司介绍</string>
+    <string name="historical_memorabilia">历史大事记</string>
+    <string name="company_honor">企业荣誉</string>
+    <string name="sansheng_cultural">企业文化</string>
+    <string name="sansheng_brands">品牌概况</string>
+    <string name="brand_indroduc">品牌概述</string>
+    <string name="company_community">公益事业</string>
+    <string name="company_quality">优质产品</string>
+    <string name="produce_introduce">产品概况</string>
+
+    <!-- setting -->
+    <string name="clear_img">清除缓存图片</string>
+    <string name="msg_push"> 消息推送</string>
+    <string name="bind_setting">绑定设置</string>
+    <string name="feed_back">意见反馈</string>
+    <string name="version_update">版本更新</string>
+    <string name="about_sansheng">关于三生助手</string>
+    <string name="logout">退出</string>
+    <string name="system_setting">系统设置</string>
+    <string name="can_update">可更新到1.00版本</string>
+    <string name="about_sansheng_title">关于三生商务助手</string>
+    <string name="sansheng_biz_helper">三生商务助手</string>
+    <string name="version">版本 1.0.1</string>
+    <string name="about_content">秉承"自尊敬人"的核心价值观，三生尊重员工尊重伙伴、尊重顾客、尊重社会、尊重自然，以力求完善的态度为他人创造价值，通过为普通的产品和生活赋予情感与意义，从而在平凡中创造不凡！</string>
+    <string name="feed_back_hint">请具体描述您的问题和建议</string>
+    <string name="send">发送</string>
+    <string name="tecetnt_weibo">腾讯微博</string>
+    <string name="qqzone">QQ空间</string>
+    <string name="weixin">朋友网</string>
+    <string name="wx">微信</string>
+    <string name="sina_weibo">新浪微博</string>
+    <string name="all_rigth">All  rights  reserved by YOFOTO</string>
+
+    <!-- common -->
+    <string name="ok">确定</string>
+    <string name="no">取消</string>
+    <string name="tips">提示</string>
+
+    <!-- Login -->
+    <string name="login">登入</string>
+    <string name="shopname">工作室编号</string>
+    <string name="username">会员号</string>
+    <string name="password">密码</string>
+    <string name="alert_password_cant_be_null">密码不能位空</string>
+    <string name="alert_user_cant_be_null">用户名不能为空</string>
+    <string name="alert_login_type_err">登入方式有误</string>
+    <string name="alert_pass_user_err">帐号或者密码有误</string>
+    <string name="alert_not_office_member">非正式会员</string>
+
+    <!--  -->
+    <string name="sync">同步到本地路通讯录</string>
+
+    <!-- shooping -->
+    <string name="search">搜索</string>
+    <string name="shopp_car">购物车</string>
+    <string name="sale">零售</string>
+    <string name="pv">复消</string>
+    <string name="order_self">为自己下单</string>
+    <string name="order_member">为其他会员下单</string>
+    <!--  -->
+    <string name="room_pay">工作室支付</string>
+    <string name="yikatong">一卡通</string>
+    <string name="pos">POS机</string>
+    <string name="go_pay">去支付</string>
+    <string name="next">下一步</string>
+    <string name="third_part">第三方支付</string>
+    <string name="visite">拜访提醒</string>
+    <string name="birthday">生日提醒</string>
+    <string name="scheme">日程提醒</string>
+
+    <!-- 业绩查询 -->
+    <string name="results_query">业绩查询</string>
+    <string name="title_activity_results_view">ResultsView</string>
+    <string name="title_activity_shop_index">ShopIndexActivity</string>
+
+</resources>

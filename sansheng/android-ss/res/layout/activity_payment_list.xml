@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#AEAEAE"
+    android:orientation="vertical" >
+
+    <com.view.SearchView
+        android:id="@+id/SearchView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Head_Bar"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+    </com.view.SearchView>
+
+    <ListView
+        android:id="@+id/Lv_Balance_List"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@null" >
+    </ListView>
+
+</LinearLayout>

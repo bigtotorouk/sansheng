@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="19dp"  >
+    <TextView 
+        android:id="@+id/Tv_newstTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ttttt"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="20dip" />
+
+    <TextView
+        android:id="@+id/Tv_newstTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Tv_newstTitle"
+        android:layout_below="@+id/Tv_newstTitle"
+        android:text="time" />
+
+    <TextView
+        android:id="@+id/Tv_newstContext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Tv_newstTime"
+        android:layout_below="@+id/Tv_newstTime"
+        android:layout_marginTop="14dp"
+        android:text="context" />
+
+"
+
+</RelativeLayout>

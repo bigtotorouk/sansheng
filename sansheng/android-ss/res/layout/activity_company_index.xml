@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custome="http://schemas.android.com/apk/res/com.lekoko.sansheng"
+    style="@style/Btn_Company_Index"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.view.HeadBar
+        android:id="@+id/Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.view.HeadBar>
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/Layout_One" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_below="@+id/Head_Bar" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/Btn_Announcement" -->
+    <!-- android:layout_width="106dip" -->
+    <!-- android:layout_height="112dip" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:background="@drawable/btn_announcement" -->
+    <!-- android:gravity="bottom|center" -->
+    <!-- android:paddingBottom="10dip" -->
+    <!-- android:text="@string/latest_news" -->
+    <!-- android:textColor="#FCFCFC" /> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/Btn_News" -->
+    <!-- android:layout_width="106dip" -->
+    <!-- android:layout_height="112dip" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:background="@drawable/btn_news" -->
+    <!-- android:gravity="bottom|center" -->
+    <!-- android:paddingBottom="10dip" -->
+    <!-- android:text="@string/company_news" -->
+    <!-- android:textColor="#FCFCFC" /> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/Btn_Sales" -->
+    <!-- android:layout_width="106dip" -->
+    <!-- android:layout_height="112dip" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:background="@drawable/btn_sales" -->
+    <!-- android:gravity="bottom|center" -->
+    <!-- android:paddingBottom="10dip" -->
+    <!-- android:text="@string/hot_promotions" -->
+    <!-- android:textColor="#FCFCFC" /> -->
+    <!-- </LinearLayout> -->
+
+    <TextView
+        android:id="@+id/Tv_Titile"
+        style="@style/Tv_Company_Titile"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/Head_Bar"
+        android:background="#f0f0f0" />
+
+    <ScrollView
+        android:id="@+id/Sv_Company_Index"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/Head_Bar"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/Layout_All"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/Layout_One"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="2dip"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff" >
+
+                    <com.view.ItemButton
+                        android:id="@+id/Btn_Announcement"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        custome:selected_bg="@drawable/company_news"
+                        custome:selected_color="#8ca54f"
+                        custome:unselected_bg="@drawable/company_news" >
+                    </com.view.ItemButton>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff" >
+
+                    <com.view.ItemButton
+                        android:id="@+id/Btn_News"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        custome:selected_bg="@drawable/company_review"
+                        custome:selected_color="#8ca54f"
+                        custome:unselected_bg="@drawable/company_review" >
+                    </com.view.ItemButton>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff" >
+
+                    <com.view.ItemButton
+                        android:id="@+id/Btn_Sales"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        custome:selected_bg="@drawable/company_sale"
+                        custome:selected_color="#8ca54f"
+                        custome:unselected_bg="@drawable/company_sale" >
+                    </com.view.ItemButton>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layout_Two"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="2dip"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/Layout_Btn_one"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/company_one_bg" >
+
+                    <com.view.ItemButton
+                        android:id="@+id/Btn_Indroduction"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        custome:selected_bg="@drawable/company_company"
+                        custome:selected_color="#ff7e33"
+                        custome:unselected_bg="@drawable/company_company" >
+                    </com.view.ItemButton>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff" >
+
+                    <com.view.ItemButton
+                        android:id="@+id/Btn_Company_Produce"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        custome:selected_bg="@drawable/company_industry"
+                        custome:selected_color="#8ca54f"
+                        custome:unselected_bg="@drawable/company_industry" >
+                    </com.view.ItemButton>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff" >
+
+                    <com.view.ItemButton
+                        android:id="@+id/Btn_Company_Quality"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        custome:selected_bg="@drawable/company_product"
+                        custome:selected_color="#3aa7df"
+                        custome:unselected_bg="@drawable/company_product" >
+                    </com.view.ItemButton>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layout_Three"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="2dip"
+                android:orientation="horizontal" >
+
+                <!--
+                          <Button
+                    android:id="@+id/Btn_Company_Culture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_culture"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="10dip"
+                    android:text="@string/sansheng_cultural"
+                    android:textSize="12sp" />
+                -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff" >
+
+                    <com.view.ItemButton
+                        android:id="@+id/Btn_Company_Culture "
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        custome:selected_bg="@drawable/company_culture"
+                        custome:selected_color="#a168e7"
+                        custome:unselected_bg="@drawable/company_culture" >
+                    </com.view.ItemButton>
+                </RelativeLayout>
+                <!--
+                    <Button
+                    android:id="@+id/Btn_Brands"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_brand"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="10dip"
+                    android:text="@string/sansheng_brands"
+                    android:textSize="12sp" />
+                -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff" >
+
+                    <com.view.ItemButton
+                        android:id="@+id/Btn_Brands"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        custome:selected_bg="@drawable/company_brand"
+                        custome:selected_color="#f34c4c"
+                        custome:unselected_bg="@drawable/company_brand" >
+                    </com.view.ItemButton>
+                </RelativeLayout>
+
+                <!--
+                      <Button
+                    android:id="@+id/Btn_Company_Community"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_community"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="10dip"
+                    android:text="@string/company_community"
+                    android:textSize="12sp" />
+                -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff" >
+
+                    <com.view.ItemButton
+                        android:id="@+id/Btn_Company_Community"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        custome:selected_bg="@drawable/company_public_interest"
+                        custome:selected_color="#3dc07b"
+                        custome:unselected_bg="@drawable/company_public_interest" >
+                    </com.view.ItemButton>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layout_Four"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="2dip"
+                android:orientation="horizontal" >
+
+                <!--
+                     <Button
+                    android:id="@+id/Btn_Histoty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_histoty"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="10dip"
+                    android:text="@string/historical_memorabilia"
+                    android:textSize="12sp" />
+                -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff" >
+
+                    <com.view.ItemButton
+                        android:id="@+id/Btn_Histoty"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        custome:selected_bg="@drawable/company_history"
+                        custome:selected_color="#33b2c5"
+                        custome:unselected_bg="@drawable/company_history" >
+                    </com.view.ItemButton>
+                </RelativeLayout>
+
+                <!--
+                <Button
+                    android:id="@+id/Btn_Company_Honor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_honor"
+                    android:gravity="bottom|center"
+                    android:paddingBottom="10dip"
+                    android:text="@string/company_honor"
+                    android:textSize="12sp" />
+                -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff" >
+
+                    <com.view.ItemButton
+                        android:id="@+id/Btn_Company_Honor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        custome:selected_bg="@drawable/company_awards"
+                        custome:selected_color="#e9932f"
+                        custome:unselected_bg="@drawable/company_awards" >
+                    </com.view.ItemButton>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:visibility="invisible" >
+
+                    <com.view.ItemButton
+                        android:id="@+id/Btn_Null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_honor"
+                        android:gravity="bottom|center"
+                        android:paddingBottom="10dip"
+                        android:text="@string/company_honor"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

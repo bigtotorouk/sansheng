@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custome="http://schemas.android.com/apk/res/com.lekoko.sansheng"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dddddd"
+    android:orientation="vertical" >
+
+    <com.view.HeadBar
+        android:id="@+id/Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.view.HeadBar>
+
+    <LinearLayout
+        android:id="@+id/Layout_Tab"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/Head_Bar"
+        android:orientation="horizontal" >
+
+        <com.view.BtnTab
+            android:id="@+id/Btn_Info"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="基本信息"
+            android:textSize="15sp"
+            custome:select_color="@drawable/tab_selected_bg"
+            custome:selected="true"
+            custome:unselect_color="@drawable/tab_unselect_bg" />
+
+        <com.view.BtnTab
+            android:id="@+id/Btn_Detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="详细信息"
+            android:textSize="15sp"
+            custome:select_color="@drawable/tab_selected_bg"
+            custome:selected="false"
+            custome:unselect_color="@drawable/tab_unselect_bg" />
+
+        <com.view.BtnTab
+            android:id="@+id/Btn_Evaluation"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="用户评价"
+            android:textSize="15sp"
+            custome:select_color="@drawable/tab_selected_bg"
+            custome:selected="false"
+            custome:unselect_color="@drawable/tab_unselect_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Layout_Opr"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="#66bebebe"
+        android:orientation="horizontal" >
+
+        <com.view.IconButton
+            android:id="@+id/Btn_Search"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            custome:btn_icon="@drawable/ico_search"
+            custome:btn_text="@string/search" >
+        </com.view.IconButton>
+
+        <com.view.IconButton
+            android:id="@+id/Btn_Shopp_Car"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            custome:btn_icon="@drawable/img_shop_car"
+            custome:btn_text="@string/shopp_car" >
+        </com.view.IconButton>
+    </LinearLayout>
+
+    <com.view.StaticViewPager
+        android:id="@+id/ViewPaper_Content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/Layout_Opr"
+        android:layout_below="@id/Layout_Tab" >
+    </com.view.StaticViewPager>
+
+    <!--
+    <FrameLayout
+        android:id="@+id/Content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/Layout_Tab" >
+    </FrameLayout>
+    -->
+
+</RelativeLayout>

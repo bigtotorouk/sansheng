@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="1dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:background="#97cbf0" >
+
+        <EditText
+            android:id="@+id/Et_Search"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="50dip"
+            android:background="#97cbf0"
+            android:singleLine="true"
+            android:textColor="#7ba2bf" />
+
+        <Button
+            android:id="@+id/Btn_Search"
+            android:layout_width="20dip"
+            android:layout_height="22dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:focusable="true"
+            android:background="@drawable/search" />
+    </RelativeLayout>
+
+</RelativeLayout>

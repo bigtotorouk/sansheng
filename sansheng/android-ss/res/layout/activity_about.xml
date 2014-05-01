@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+<Button
+        android:id="@+id/Btn_about_return"
+        android:layout_width="48dip"
+        android:layout_height="58dip"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/arrow_rigth"
+        android:paddingLeft="10dip" />
+
+ 	<ListView
+ 	    android:id="@+id/Lv_Indroduction"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_alignParentBottom="true"
+ 	    android:layout_alignParentLeft="true"
+ 	    android:layout_below="@+id/Tv_InfoName" >
+
+ 	</ListView>
+
+ 	<TextView
+        android:layout_width="10dip"
+        android:layout_height="16dip"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/u403_normal"
+        android:paddingLeft="10dip"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Tv_InfoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Btn_about_return"
+        android:layout_alignBottom="@+id/Btn_about_return"
+        android:layout_centerHorizontal="true"
+        android:text="@string/company_Indroduction"
+        android:textSize="25sp" />
+  
+</RelativeLayout>
