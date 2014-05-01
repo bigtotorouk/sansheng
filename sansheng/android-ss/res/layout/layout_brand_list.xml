@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:background="#dddddd"
     android:minHeight="190dip"
-    android:orientation="horizontal" >
+    android:orientation="vertical" >
 
     <RelativeLayout
         android:id="@+id/Layout_One"
@@ -20,6 +20,7 @@
             android:id="@+id/Img_One"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:background="#ffffff" />
 
         <TextView
@@ -50,11 +51,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/Tv_Title_One"
-            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
             android:layout_marginTop="10dip"
-            android:layout_toRightOf="@id/Tv_Price_One"
+            android:layout_alignParentRight="true"
             android:text="764pv"
-            android:textColor="#222222"
+            android:textColor="#989898"
             android:textSize="13sp" />
     </RelativeLayout>
 
@@ -72,6 +73,7 @@
             android:id="@+id/Img_Two"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:background="#ffffff" />
 
         <TextView
@@ -102,11 +104,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/Tv_Title_Two"
-            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
             android:layout_marginTop="10dip"
-            android:layout_toRightOf="@id/Tv_Price_Two"
+            android:layout_alignParentRight="true"
             android:text="764pv"
-            android:textColor="#222222"
+            android:textColor="#989898"
             android:textSize="13sp" />
     </RelativeLayout>
 

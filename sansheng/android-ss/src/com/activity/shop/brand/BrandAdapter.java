@@ -116,7 +116,8 @@ public class BrandAdapter extends BaseAdapter {
 
 			Float pv = Float.parseFloat(brandone.getPv());
 			int intpv = pv.shortValue();
-			tvPvOne.setText("/" + intpv + "pv");
+			//tvPvOne.setText("/" + intpv + "pv");
+			tvPvOne.setText(intpv + "pv");
 		}
 
 		imageLoader.displayImage(brandone.getSimg(), imgOne, options,
@@ -132,7 +133,8 @@ public class BrandAdapter extends BaseAdapter {
 			if (brandTwo.getPv() != null) {
 				Float pv = Float.parseFloat(brandTwo.getPv());
 				int intpv = pv.shortValue();
-				tvPvTwo.setText("/" + intpv + "pv");
+				//tvPvTwo.setText("/" + intpv + "pv");
+				tvPvTwo.setText(intpv + "pv");
 			}
 			imageLoader.displayImage(brandTwo.getSimg(), imgTwo, options,
 					animateFirstListener);

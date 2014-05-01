@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custome="http://schemas.android.com/apk/res/com.example.sansheng"
+    package="com.lekoko.sansheng"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- ###################声明SDK使用的相关权限###################### -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户。 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据。 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于评论模块分享位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于评论模块分享位置信息 -->
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.application.CommonApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.TitleBar" >
+        /** Index    android:name="com.activity.index.IndexActivity"**/
+       /** android:theme="@style/Theme.Sherlock"  **/
+     	/** setting   com.activity.setting.SettingActivity **/
+      	/**news   com.activity.company.news.NewsActivity**/
+      	/**  com.activity.index.LoginActivity  **/
+	/**  com.activity.shop.address.AddAddressActivity**/
+	/** android:name="com.activity.bill.BillActivity" **/
+	/**com.activity.shop.payment.PaymentActivity **/
+        <activity
+            android:name="com.activity.index.LoginActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.activity.company.historical.HistoricalActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.activity.achievement.AchievementActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.activity.shop.ShopActivity"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name="com.activity.index.IndexActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.TitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.activity.schedule.ScheduleActivity"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name="com.activity.schedule.AddScheduleActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity android:name="com.activity.schedule.SelectCustomeActivity" >
+        </activity>
+        <activity android:name="com.companies.companies" >
+        </activity>
+        <activity
+            android:name="com.activity.company.CompanyIndexActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.activity.company.announcement.AnnouncementActivity" >
+        </activity>
+        <activity android:name="com.activity.company.introduce.IntroduceAcitity" >
+        </activity>
+        <activity android:name="com.activity.company.news.NewsActivity" >
+        </activity>
+        <activity android:name="com.activity.company.sale.SaleActivity" >
+        </activity>
+        <activity android:name="com.activity.setting.feedback.FeedBackActivity" >
+        </activity>
+        <activity android:name="com.activity.setting.bindsetting.BindSettingActivity" >
+        </activity>
+        <activity android:name="com.activity.setting.about.AboutActivity" >
+        </activity>
+        <activity android:name="com.activity.setting.bindsetting.tecent.TecentLoginActivity" >
+        </activity>
+        <activity android:name="com.activity.setting.bindsetting.sina.SinaLogingActivity" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.activity.setting.SettingActivity" >
+        </activity>
+        <!-- Index -->
+        <activity
+            android:name="com.activity.SplashActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity android:name="com.activity.company.brands.BrandsActivity" >
+        </activity>
+        <activity android:name="com.activity.company.cultural.CulturalActivity" >
+        </activity>
+        <activity android:name="com.activity.company.quality.QualityActivity" >
+        </activity>
+        <activity android:name="com.activity.company.community.CommunityActivity" >
+        </activity>
+        <activity android:name="com.activity.company.produce.ProduceActivity" >
+        </activity>
+        <activity android:name="com.activity.company.honor.Honour_Activity" >
+        </activity>
+        <activity android:name="com.activity.company.InfoDetailActivity" >
+        </activity>
+
+        <!-- payment -->
+        <activity android:name="com.activity.shop.payment.PaymentActivity" >
+        </activity>
+
+        <!-- Shop -->
+        <activity android:name="com.activity.shop.detail.ShopDetailActivity" >
+        </activity>
+        <activity android:name="com.activity.shop.brand.BrandActivity" >
+        </activity>
+        <activity android:name="com.activity.shop.car.ShopCarActivity" >
+        </activity>
+        <activity android:name="com.activity.shop.search.SearchActivity" >
+        </activity>
+        <activity android:name="com.activity.shop.sumary.SumaryActivity" >
+        </activity>
+        <activity android:name="com.activity.shop.address.ReapActivity" >
+        </activity>
+        <activity android:name="com.activity.shop.address.AddAddressActivity" >
+        </activity>
+        <activity
+            android:name="com.activity.shop.address.EditAddressActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.activity.shop.address.AddressActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity android:name="com.activity.shop.address.RoomAddressActivity" >
+        </activity>
+        <activity
+            android:name="com.activity.shop.sumary.ShopTypeActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <!--
+        <activity
+            android:name="com.activity.bill.BillActivity"
+            android:launchMode="standard" >
+        </activity>
+        -->
+
+        <activity
+            android:name="com.activity.balance.BalanceActivity"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="order" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.activity.balance.comment.CommentActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name="com.activity.balance.UnPaymentDetailActivity" >
+        </activity>
+        <activity android:name="com.activity.balance.PaymentDetailActivity" >
+        </activity>
+        <activity
+            android:name="com.activity.custome.CustomInfoActivity"
+            android:launchMode="standard" >
+        </activity>
+
+        <!-- custome -->
+        <activity
+            android:name="com.activity.custome.CustomeIndexActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.activity.custome.CustomeDetailActivity"
+            android:launchMode="standard"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- pusch  service -->
+        <receiver android:name="com.push.PushMessageReceiver" >
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- push service -->
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" />
+
+        <meta-data
+            android:name="api_key"
+            android:value="ZugshYGA7pQhfnmTV9AChV1y" />
+
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity android:name="com.tencent.tauth.AuthActivity" />
+
+        <!-- ###################添加UmengAppkey###################### -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="52845da056240ba708002022" >
+        </meta-data>
+
+        <activity
+            android:name="com.activity.shop.ShopIndexActivity"
+            android:label="@string/title_activity_shop_index" >
+        </activity>
+    </application>
+
+</manifest>

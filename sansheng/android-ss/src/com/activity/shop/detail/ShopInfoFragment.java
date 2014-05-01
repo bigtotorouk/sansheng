@@ -14,6 +14,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -86,6 +87,10 @@ public class ShopInfoFragment extends Fragment implements OnClickListener {
 			TextView tvNumber = (TextView) view.findViewById(R.id.Tv_Number);
 			TextView tvFormat = (TextView) view.findViewById(R.id.Tv_Format);
 			TextView tvSumary = (TextView) view.findViewById(R.id.WebView_Shop);
+			
+			// add by bigtotoro
+			ImageView imgPro = (ImageView) view.findViewById(R.id.icon);
+			TextView txtPro = (TextView) view.findViewById(R.id.info);
 
 			// 更新产品图片
 			if (product != null) {
@@ -111,6 +116,11 @@ public class ShopInfoFragment extends Fragment implements OnClickListener {
 			if (product.getFormat() != null) {
 				tvFormat.setText(product.getFormat());
 			}
+			if(product.getImgs()!=null && product.getImgs().length>0){
+				activity.imageLoader.displayImage(product.getImgs()[0], imgPro, activity.options);
+			}
+			txtPro.setText(Html.fromHtml(product.getSummary()));
+			
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -146,6 +156,7 @@ public class ShopInfoFragment extends Fragment implements OnClickListener {
 		adapter.setUrls(urls);
 		gallery.setAdapter(adapter);
 		shopDialog = new ShopTypeDialog(commonActivity, order);
+		
 	}
 
 	@Override

@@ -21,12 +21,30 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="vertical" >
-
+			<FrameLayout android:layout_width="fill_parent"
+			    android:layout_height="351dp">
+			    <ImageView android:id="@+id/icon"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:scaleType="centerCrop"
+			        />
+			    <TextView 
+			        android:id="@+id/info"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="bottom"
+			        android:textColor="#fff"
+			        android:text="三生御堂"
+			        android:textSize="16sp"
+			        android:padding="2dp"
+			        android:background="#88888888"/>
+			</FrameLayout>
             <com.view.HorizontalListView
                 android:id="@+id/gallery"
                 android:layout_width="fill_parent"
                 android:layout_height="351px"
-                android:background="#e3e3e3" />
+                android:background="#e3e3e3"
+                android:visibility="gone" />
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -41,6 +59,7 @@
                     android:paddingBottom="10dip"
                     android:text=" "
                     android:textColor="#222222"
+                    android:visibility="gone"
                     android:textSize="18sp" />
 
                 <LinearLayout
