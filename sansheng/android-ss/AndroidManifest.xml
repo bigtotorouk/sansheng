@@ -112,10 +112,12 @@
         </activity>
         <activity android:name="com.activity.setting.bindsetting.tecent.TecentLoginActivity" >
         </activity>
+        <activity android:name="com.activity.shop.detail.ShopIntroduceActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
         <activity android:name="com.activity.setting.bindsetting.sina.SinaLogingActivity" >
             <intent-filter>
                 <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

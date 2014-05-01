@@ -4,12 +4,15 @@
     android:layout_height="fill_parent"
     android:background="#e3e3e3"
     android:orientation="vertical" >
-
+<com.view.HeadBar
+        android:id="@+id/Head_Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </com.view.HeadBar>
     <WebView
         android:id="@+id/Wv_Detail"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_below="@id/Head_Bar" >
     </WebView>
-
 </LinearLayout> 

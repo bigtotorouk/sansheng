@@ -218,7 +218,9 @@ public class ShopInfoFragment extends Fragment implements OnClickListener {
 					});
 			break;
 		case R.id.layout_detail: // 详细介绍
-			Intent intent = new Intent(activity, ShopIntroduceFragment.class);
+			String pid = product.getPid();
+			Intent intent = new Intent(activity, ShopIntroduceActivity.class);
+			intent.putExtra("pid", pid);
 			startActivity(intent);
 			break;
 		case R.id.layout_evaluate: // 用户评价
