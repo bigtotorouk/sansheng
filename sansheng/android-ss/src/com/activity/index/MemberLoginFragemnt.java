@@ -103,8 +103,9 @@ public class MemberLoginFragemnt extends Fragment implements OnClickListener {
 					Log.e("debug", "mac " + mac);
 					HttpCommonResponse resp = LoginApi.Login(user,
 							DeviceInfo.getInfo(activity));
-					user = saveUser = LoginApi.getResponseUser(resp
+					saveUser = LoginApi.getResponseUser(resp
 							.getResponse());
+					user = saveUser;
 					if (user == null || user.getUserId() == null
 							|| user.getUserId().equals("")) {
 						// activity.showToast("网络异常");

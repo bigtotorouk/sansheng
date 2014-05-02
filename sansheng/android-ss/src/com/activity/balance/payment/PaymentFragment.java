@@ -90,9 +90,9 @@ public class PaymentFragment extends CommonFragment implements OnClickListener,
 			@Override
 			public void onClick(View v) {
 				String content = searchView.getContent();
-				if (!content.equals("")) {
+				//if (!content.equals("")) {
 					search(content);
-				}
+				//}
 			}
 		});
 		searchView.getEtSearch().setHint("搜索");
@@ -130,9 +130,9 @@ public class PaymentFragment extends CommonFragment implements OnClickListener,
 				Log.e("debug", "key" + keyCode);
 				if (keyCode == KeyEvent.KEYCODE_ENTER) {
 					String content = searchView.getContent();
-					if (!content.equals("")) {
-						search(content);
-					}
+					//if (!content.equals("")) {
+					search(content);
+					//}
 					searchView.getEtSearch().setText(content);
 				}
 				return false;

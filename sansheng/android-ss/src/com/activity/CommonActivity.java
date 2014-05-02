@@ -493,11 +493,12 @@ public class CommonActivity extends SherlockFragmentActivity {
 		return AesUser;
 	}
 
+	// add by bigtotoro,  因为DateKeeper.getData老是为空
 	public User getUser() {
-		User user = (User) DateKeeper.getData(this, MYUSER);
-		// User user = new User();
-		// user.setUserId("TYgQm3jJucgti1xy2Hd9zA");
-		// user.setLogintype(1);
+		//User user = (User) DateKeeper.getData(this, MYUSER);
+		User user = new User();
+		user.setUserId("TYgQm3jJucgti1xy2Hd9zA");
+		user.setLogintype(1);
 		return user;
 	}
 

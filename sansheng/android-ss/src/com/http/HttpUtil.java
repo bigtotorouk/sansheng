@@ -34,6 +34,8 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.util.Log;
+
 public class HttpUtil {
 
 	// response state is sucess
@@ -147,6 +149,84 @@ public class HttpUtil {
 		return resp;
 	}
 
+	/*public static HttpCommonResponse post(String url,Map<String, String> params) {
+		HttpCommonResponse resp = new HttpCommonResponse();
+		List<NameValuePair>nvParams=toNameValueParams(params);
+		String body = null;
+		try {
+			HttpClient client = HttpUtil.getHttpClient();
+			HttpPost post = new HttpPost(url);
+			JSONObject holder = getJsonObjectFromMap(params);
+
+		    //passes the results to a string builder/entity
+		    StringEntity se = new StringEntity(holder.toString());
+
+		    //sets the post request as the resulting string
+		    post.setEntity(se);
+		    //sets a request header so the page receving the request
+		    //will know what to do with it
+		    post.setHeader("Accept", "application/json");
+		    post.setHeader("Content-type", "application/json");
+			
+			HttpResponse response = client.execute(post);
+			body = EntityUtils.toString(response.getEntity(), "utf-8");
+			resp.setResponse(body);
+			resp.setStateCode(response.getStatusLine().getStatusCode());
+
+			System.out.println("body:" + body);
+		} catch (SocketException e) {
+			e.printStackTrace();
+			resp.setStateCode(545);
+		} catch (Exception e) {
+			e.printStackTrace();
+			resp.setStateCode(544);
+		}
+		return resp;
+
+	}
+	
+	private static JSONObject getJsonObjectFromMap(Map params) throws JSONException {
+
+	    //all the passed parameters from the post request
+	    //iterator used to loop through all the parameters
+	    //passed in the post request
+	    Iterator iter = params.entrySet().iterator();
+
+	    //Stores JSON
+	    JSONObject holder = new JSONObject();
+
+	    //using the earlier example your first entry would get email
+	    //and the inner while would get the value which would be 'foo@bar.com' 
+	    //{ fan: { email : 'foo@bar.com' } }
+
+	    //While there is another entry
+	    while (iter.hasNext()) 
+	    {
+	        //gets an entry in the params
+	        Map.Entry pairs = (Map.Entry)iter.next();
+
+	        //creates a key for Map
+	        String key = (String)pairs.getKey();
+
+	        //Create a new map
+	        Map m = (Map)pairs.getValue();   
+
+	        //object for storing Json
+	        JSONObject data = new JSONObject();
+
+	        //gets the value
+	        Iterator iter2 = m.entrySet().iterator();
+	        while (iter2.hasNext()) 
+	        {
+	            Map.Entry pairs2 = (Map.Entry)iter2.next();
+	            data.put((String)pairs2.getKey(), (String)pairs2.getValue());
+	        }
+
+	        //puts email and 'foo@bar.com'  together in map
+	        holder.put(key, data);
+	    }
+	    return holder;
+	}*/
 	public static HttpCommonResponse post(String url,Map<String, String> params) {
 		HttpCommonResponse resp = new HttpCommonResponse();
 		List<NameValuePair>nvParams=toNameValueParams(params);
@@ -228,6 +308,7 @@ public class HttpUtil {
 		HttpClient client = HttpUtil.getHttpClient();
 		try {
 			String u = getUrlWithParams(url, params);
+			Log.d("bigtoto", "url:" + u);
 			System.out.println("url:" + u);
 			HttpGet get = new HttpGet(u);
 
@@ -278,6 +359,7 @@ public class HttpUtil {
 				for (String key : params.keySet()) {
 					json.put(key, params.get(key));
 				}
+				Log.d("doPost", "request url"+ url +" \njson "+json.toString());
 				post.setEntity(new StringEntity(json.toString(), "UTF-8"));
 			}
 			BaseNetService.httpRequestBases.put(url, post);

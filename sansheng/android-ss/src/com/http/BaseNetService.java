@@ -24,7 +24,10 @@ public class BaseNetService {
 	public static final int SHOP_PRBC_SERIZAL = 1200;
 	public static final int SHOP_BRANDINO = 1200;
 	public static final int SHOP_PRODUCT_BASE = 1200;
-
+	
+	/* 登陆 */
+	public static final String LOGIN = HOST_PORT + "login";
+	
 	/* 公司咨询 */
 	public static final String Announcement = HOST_PORT + "notices";
 	public static final String NEW = HOST_PORT + "newss";

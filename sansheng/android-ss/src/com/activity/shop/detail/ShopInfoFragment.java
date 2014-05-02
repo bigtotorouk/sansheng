@@ -20,6 +20,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.activity.CommonActivity;
+import com.activity.shop.comment.CommentListProActivity;
 import com.http.BaseRequest;
 import com.http.ShopService;
 import com.http.task.ShopAsyncTask;
@@ -224,6 +225,8 @@ public class ShopInfoFragment extends Fragment implements OnClickListener {
 			startActivity(intent);
 			break;
 		case R.id.layout_evaluate: // 用户评价
+			Intent evaluateIntent = new Intent(activity, CommentListProActivity.class);
+			startActivity(evaluateIntent);
 			break;
 		}
 	}

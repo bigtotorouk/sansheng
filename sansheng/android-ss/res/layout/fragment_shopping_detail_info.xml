@@ -22,11 +22,11 @@
             android:layout_height="fill_parent"
             android:orientation="vertical" >
 			<FrameLayout android:layout_width="fill_parent"
-			    android:layout_height="351dp">
+			    android:layout_height="wrap_content">
 			    <ImageView android:id="@+id/icon"
 			        android:layout_width="match_parent"
-			        android:layout_height="match_parent"
-			        android:scaleType="centerCrop"
+			        android:layout_height="wrap_content"
+			        android:maxHeight="351dp"
 			        />
 			    <TextView 
 			        android:id="@+id/info"
@@ -35,6 +35,8 @@
 			        android:layout_gravity="bottom"
 			        android:textColor="#fff"
 			        android:text="三生御堂"
+			        android:maxLines="2"
+			        android:ellipsize="end"
 			        android:textSize="16sp"
 			        android:padding="2dp"
 			        android:background="#88888888"/>

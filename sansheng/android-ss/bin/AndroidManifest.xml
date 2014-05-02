@@ -74,7 +74,7 @@
             android:launchMode="singleTop"
             android:theme="@style/Theme.TitleBar"
             android:windowSoftInputMode="stateAlwaysHidden" >
-            <intent-filter>
+           <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -113,6 +113,9 @@
         <activity android:name="com.activity.setting.bindsetting.tecent.TecentLoginActivity" >
         </activity>
         <activity android:name="com.activity.shop.detail.ShopIntroduceActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity android:name="com.activity.shop.comment.CommentListProActivity"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
         </activity>
         <activity android:name="com.activity.setting.bindsetting.sina.SinaLogingActivity" >

@@ -65,9 +65,9 @@ public class UnpaymentFragment extends CommonFragment implements
 			@Override
 			public void onClick(View v) {
 				String content = searchView.getContent();
-				if (!content.equals("")) {
+				//if (!content.equals("")) {
 					search(content);
-				}
+				//}
 			}
 		});
 		searchView.getEtSearch().setHint("搜索");
@@ -77,7 +77,7 @@ public class UnpaymentFragment extends CommonFragment implements
 			public void onTextChanged(CharSequence s, int start, int before,
 					int count) {
 				// TODO Auto-generated method stub
-				if (searchView.getContent().equals("")) {
+				if (searchView.getContent().equals("") && balanceAdapter != null) {
 					lvBalance.setAdapter(balanceAdapter);
 					balanceAdapter.notifyDataSetChanged();
 				}
@@ -104,9 +104,9 @@ public class UnpaymentFragment extends CommonFragment implements
 				Log.e("debug", "key" + keyCode);
 				if (keyCode == KeyEvent.KEYCODE_ENTER) {
 					String content = searchView.getContent();
-					if (!content.equals("")) {
+					//if (!content.equals("")) {
 						search(content);
-					}
+					//}
 					searchView.getEtSearch().setText(content);
 				}
 				return false;
@@ -210,6 +210,8 @@ public class UnpaymentFragment extends CommonFragment implements
 			balance = (List<CustomForm>) viewCommonResponse.getData();
 			if (balance != null) {
 				if (searchAdapter == null) {
+					User user = activity.getUser();
+					user.getLogintype();
 					if (activity.getUser().getLogintype() == 1) {
 						searchAdapter = new unPaymentAdapter(activity, this,
 								true);
