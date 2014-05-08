@@ -235,6 +235,7 @@ public class HttpUtil {
 			HttpClient client = HttpUtil.getHttpClient();
 			HttpPost post = new HttpPost(url);
 			if (params != null) {
+				Log.d("bigtotoro", "post body "+new UrlEncodedFormEntity(nvParams, "UTF-8").toString());
 				post.setEntity(new UrlEncodedFormEntity(nvParams, "UTF-8"));
 			}
 			HttpResponse response = client.execute(post);

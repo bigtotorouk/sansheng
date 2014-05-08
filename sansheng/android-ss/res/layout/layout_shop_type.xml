@@ -1,59 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="250dip"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="275dp"
     android:layout_height="wrap_content"
-    android:background="#ffffff" >
-
+    android:background="#00000000" >
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="#ffffff" >
 
         <RelativeLayout
-            android:id="@+id/Layout_Title"
-            android:layout_width="fill_parent"
-            android:layout_height="40dip"
-            android:background="#eeeeee" >
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="15dip"
-                android:text="您想零售该商品还是复效该商品？"
-                android:textColor="#222222"
-                android:textSize="13sp" />
-        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/Layout_Title"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="#eeeeee" >
 
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="50dip"
-            android:layout_below="@id/Layout_Title"
-            android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:text="您想零售该商品还是复效该商品？"
+                    android:textColor="#222222"
+                    android:textSize="13sp" />
+            </RelativeLayout>
 
-            <Button
-                android:id="@+id/Btn_Lingshou"
-                android:layout_width="80dip"
-                android:layout_height="30dip"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dip"
-                android:layout_marginRight="10dip"
-                android:background="@drawable/btn_finish_bg"
-                android:text="零售"
-                android:textColor="#ffffff" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/Layout_Title"
+                android:orientation="horizontal" >
 
-            <Button
-                android:id="@+id/Btn_Fu"
-                android:layout_width="80dip"
-                android:layout_height="30dip"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dip"
-                android:background="@drawable/btn_finish_bg"
-                android:text="复消"
-                android:textColor="#ffffff" />
+                <Button
+                    android:id="@+id/Btn_Lingshou"
+                    android:layout_width="80dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/btn_finish_bg"
+                    android:text="零售"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/Btn_Fu"
+                    android:layout_width="80dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/btn_finish_bg"
+                    android:text="复消"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
         </RelativeLayout>
     </RelativeLayout>
-
-</RelativeLayout>
+	<ImageView android:id="@+id/close"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="right|top"
+	    android:src="@drawable/btn_close_gray"/>
+</FrameLayout>

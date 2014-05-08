@@ -1,5 +1,7 @@
 package com.activity.shop.detail;
 
+import java.util.Arrays;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -90,7 +92,7 @@ public class ShopInfoFragment extends Fragment implements OnClickListener {
 			TextView tvSumary = (TextView) view.findViewById(R.id.WebView_Shop);
 			
 			// add by bigtotoro
-			ImageView imgPro = (ImageView) view.findViewById(R.id.icon);
+			ViewPager imgPro = (ViewPager) view.findViewById(R.id.icon);
 			TextView txtPro = (TextView) view.findViewById(R.id.info);
 
 			// 更新产品图片
@@ -118,8 +120,11 @@ public class ShopInfoFragment extends Fragment implements OnClickListener {
 				tvFormat.setText(product.getFormat());
 			}
 			if(product.getImgs()!=null && product.getImgs().length>0){
-				activity.imageLoader.displayImage(product.getImgs()[0], imgPro, activity.options);
+				ImagePagerAdapter mAdapter = new ImagePagerAdapter(activity);  
+				imgPro.setAdapter(mAdapter); 
+				mAdapter.change(Arrays.asList(product.getImgs()));
 			}
+			
 			txtPro.setText(Html.fromHtml(product.getSummary()));
 			
 
@@ -226,6 +231,7 @@ public class ShopInfoFragment extends Fragment implements OnClickListener {
 			break;
 		case R.id.layout_evaluate: // 用户评价
 			Intent evaluateIntent = new Intent(activity, CommentListProActivity.class);
+			evaluateIntent.putExtra("pid", product.getPid());
 			startActivity(evaluateIntent);
 			break;
 		}

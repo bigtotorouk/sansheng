@@ -27,6 +27,8 @@ public class BaseNetService {
 	
 	/* 登陆 */
 	public static final String LOGIN = HOST_PORT + "login";
+	/* 登陆 */
+	public static final String PRODUCT_COMMENT = HOST_PORT + "queryresaleappraise";
 	
 	/* 公司咨询 */
 	public static final String Announcement = HOST_PORT + "notices";

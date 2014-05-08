@@ -35,6 +35,7 @@ import com.view.BtnTab;
 import com.view.HeadBar;
 import com.view.HeadBar.BtnType;
 import com.view.IconButton;
+import com.view.StaticViewPager;
 import com.view.TabController;
 import com.view.TabController.TabListenner;
 
@@ -45,7 +46,7 @@ import com.view.TabController.TabListenner;
 public class ShopDetailActivity extends CommonActivity implements
 		OnClickListener {
 	private TabController tabController;
-	public static ViewPager viewPager;
+	public static StaticViewPager viewPager;
 	private IconButton btnSearch;
 	private IconButton btnShopCar;
 	public static final String INTNET_PRODUCT = "brand";
@@ -94,7 +95,7 @@ public class ShopDetailActivity extends CommonActivity implements
 		tabController.addTab(tabDetail);
 		tabController.addTab(tabEvaluation);
 
-		viewPager = (ViewPager) findViewById(R.id.ViewPaper_Content);
+		viewPager = (StaticViewPager) findViewById(R.id.ViewPaper_Content);
 
 		tabsAdapter = new TabsAdapter(this, viewPager);
 		tabsAdapter.addTab(actionBar.newTab(), ShopInfoFragment.class, null);

@@ -64,7 +64,7 @@ public class UnPaymentDetailActivity extends CommonActivity implements
 	private TextView tvMember;
 	private TextView tvReceiver;
 	private TextView tvAddres;
-
+	private TextView TvUserCode;
 	private TextView tvCode;
 
 	public static String ACTION_BALANCE = "balance";
@@ -118,6 +118,7 @@ public class UnPaymentDetailActivity extends CommonActivity implements
 		tvReceiver = (TextView) findViewById(R.id.Tv_Receiver);
 		tvAddres = (TextView) findViewById(R.id.Tv_Address);
 		tvCode = (TextView) findViewById(R.id.Tv_Order_Code);
+		TvUserCode = (TextView) findViewById(R.id.Tv_UserCode);
 		// sumaryView.tvSummaryPrice.setText(price);
 		// sumaryView.tvSumamryPV.setText(pv);
 		tvLogiscs = (TextView) findViewById(R.id.Tv_Logistics);
@@ -144,8 +145,8 @@ public class UnPaymentDetailActivity extends CommonActivity implements
 		itemTong = (ShopTypeItem) findViewById(R.id.Item_TONG);
 		itemPos = (ShopTypeItem) findViewById(R.id.Item_POS);
 		itemThird = (ShopTypeItem) findViewById(R.id.Item_Third);
-		itemRoom.selected();
-		itemTong.unselected();
+		itemRoom.unselected();
+		itemTong.selected();
 		itemPos.unselected();
 		itemThird.unselected();
 	}
@@ -468,7 +469,11 @@ public class UnPaymentDetailActivity extends CommonActivity implements
 		}
 
 		if (form.getUsername() != null) {
-			tvMember.setText("会  员:" + form.getUsername());
+			tvMember.setText("报单人:" + form.getUsername() + "  "
+					+ form.getReceiptusercall());
+		}
+		if (form.getUserid() != null) {
+			TvUserCode.setText("会员卡号:" + form.getUserid());
 		}
 		if (form.getReceiptusername() != null) {
 			tvReceiver.setText("收货人:" + form.getReceiptusername());

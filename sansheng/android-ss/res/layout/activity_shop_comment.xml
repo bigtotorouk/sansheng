@@ -4,16 +4,82 @@
     android:layout_height="fill_parent"
     android:background="#e3e3e3"
     android:orientation="vertical" >
-<com.view.HeadBar
+
+    <com.view.HeadBar
         android:id="@+id/Head_Bar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" >
     </com.view.HeadBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/Lable_logistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物流服务："
+            android:textColor="#6c6c6c"
+            android:textSize="20sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_1"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:progressDrawable="@drawable/start_bar_middle_bg"
+            android:minHeight="33dp"
+            android:maxHeight="33dp"
+            android:clickable="false"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dip"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/Lable_Shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品品质："
+            android:textColor="#6c6c6c"
+            android:textSize="20sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_2"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:progressDrawable="@drawable/start_bar_middle_bg"
+            android:minHeight="25dp"
+            android:maxHeight="25dp"
+            android:clickable="false"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1" />
+    </LinearLayout>
+
     <ListView
         android:id="@+id/list"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:divider="@drawable/address_line"
-        android:layout_below="@id/Head_Bar" >
+        android:layout_below="@id/Head_Bar"
+        android:divider="@drawable/address_line" >
     </ListView>
-</LinearLayout> 
+
+</LinearLayout>

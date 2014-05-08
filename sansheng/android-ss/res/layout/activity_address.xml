@@ -11,14 +11,48 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" >
     </com.view.HeadBar>
-
-    <LinearLayout
+	<LinearLayout
         android:id="@+id/Layout_Head"
         android:layout_width="fill_parent"
-        android:layout_height="44dip"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_below="@id/Head_Bar"
+        android:orientation="vertical"
+         >
+        <TextView android:id="@+id/tab1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:textSize="18sp"
+            android:text="家居送货"
+            android:background="@drawable/v2_address_model"/>
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/division_shop_line" >
+    </LinearLayout>
+        <TextView android:id="@+id/tab2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="工作室代收"
+            android:background="@drawable/v2_address_model"/>
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Layout_Head1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/Head_Bar"
+        android:orientation="vertical"
+        android:visibility="gone"
         android:background="@drawable/head_bg_address" >
 
         <com.view.BtnTab
@@ -29,7 +63,7 @@
             android:layout_weight="1"
             android:text="家居收货"
             android:textSize="15sp"
-            custome:select_color="@drawable/btn_tab_add_left"
+            custome:select_color="@color/trans"
             custome:select_text_color="#000000"
             custome:selected="true"
             custome:unselect_color="@color/trans"
@@ -63,6 +97,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_below="@id/Layout_Head" >
+        
     </ListView>
 
     <com.view.SumaryView

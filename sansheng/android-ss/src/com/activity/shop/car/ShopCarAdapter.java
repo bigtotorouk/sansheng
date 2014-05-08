@@ -49,7 +49,7 @@ public class ShopCarAdapter extends BaseAdapter {
 	private ShopCarActivity activity;
 	private List<Product> products;
 	private int mode = 0;
-	String strSelected;
+	String strSelected = "";
 
 	public String getStrSelected() {
 		return strSelected;
@@ -138,19 +138,19 @@ public class ShopCarAdapter extends BaseAdapter {
 				// TODO Auto-generated method stub
 				if (isChecked) {
 					if (getStrSelected().equals(""))
-						setStrSelected(products.get(position).getId());
+						setStrSelected(products.get(position).getCartid());
 					else
-						setStrSelected("," + products.get(position).getId());
+						setStrSelected("," + products.get(position).getCartid());
 				} else {
 					if (getStrSelected()
-							.indexOf(products.get(position).getId()) != -1) {
+							.indexOf(products.get(position).getCartid()) != -1) {
 						if (getStrSelected().indexOf(
-								products.get(position).getId()) == 0)
+								products.get(position).getCartid()) == 0)
 							getStrSelected().replace(
-									products.get(position).getId(), "");
+									products.get(position).getCartid(), "");
 						else
 							getStrSelected().replace(
-									"," + products.get(position).getId(), "");
+									"," + products.get(position).getCartid(), "");
 					}
 				}
 			}
@@ -378,7 +378,7 @@ public class ShopCarAdapter extends BaseAdapter {
 	public Product findById(String id) {
 		for (int i = 0; i < products.size(); i++) {
 			Product product = products.get(i);
-			if (product.getId().equals(id)) {
+			if (product.getCartid().equals(id)) {
 				return product;
 			}
 		}

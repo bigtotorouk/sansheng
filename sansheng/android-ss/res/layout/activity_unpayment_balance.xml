@@ -51,6 +51,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
+                        android:visibility="gone"
                         custome:head_str="@string/room_pay"
                         custome:item_bg="@drawable/list_setting_top_bg" >
                     </com.view.ShopTypeItem>
@@ -70,6 +71,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/Item_TONG"
+                        android:visibility="gone"
                         custome:head_str="@string/pos"
                         custome:item_bg="@drawable/list_setting_top_bg" >
                     </com.view.ShopTypeItem>
@@ -79,6 +81,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/Item_POS"
+                        android:visibility="gone"
                         custome:head_str="@string/third_part"
                         custome:item_bg="@drawable/list_setting_top_bg" >
                     </com.view.ShopTypeItem>
@@ -99,13 +102,12 @@
                             android:id="@+id/Btn_Pick"
                             android:layout_width="fill_parent"
                             android:layout_height="45dip"
+                            android:layout_marginRight="20dip"
                             android:layout_weight="1"
                             android:background="@drawable/btn_payment_bg"
                             android:text="确定提货"
-                            android:layout_marginRight="20dip"
                             android:textColor="#ffffff" />
 
-                       
                         <Button
                             android:id="@+id/Btn_Comment"
                             android:layout_width="fill_parent"
@@ -252,6 +254,31 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="10dip"
                         android:text="收货人："
+                        android:textColor="#222222"
+                        android:textSize="15sp" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="5px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/division_shop_detail" >
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Layout_UserCode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_below="@id/Layout_Two"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:id="@+id/Tv_UserCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:text="会员卡卡号："
                         android:textColor="#222222"
                         android:textSize="15sp" />
 

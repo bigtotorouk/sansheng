@@ -316,7 +316,8 @@ public class CommonActivity extends SherlockFragmentActivity {
 	}
 
 	public String getUserId() {
-		return "H7Mud3IiaWjWqdL4J4qEJA==";
+		//return "H7Mud3IiaWjWqdL4J4qEJA==";
+		return "TYgQm3jJucgti1xy2Hd9zA=="; // 商家
 		// return getAesUserName();
 	}
 
@@ -495,10 +496,14 @@ public class CommonActivity extends SherlockFragmentActivity {
 
 	// add by bigtotoro,  因为DateKeeper.getData老是为空
 	public User getUser() {
-		//User user = (User) DateKeeper.getData(this, MYUSER);
-		User user = new User();
+		User user = (User) DateKeeper.getData(this, MYUSER);
+		/*User user = new User();
+		user.setUserId("TYgQm3jJucgti1xy2Hd9zA");
+		user.setLogintype(1);*/
+		/*User user = new User();
 		user.setUserId("TYgQm3jJucgti1xy2Hd9zA");
 		user.setLogintype(1);
+		user.setShopId(0 + "");*/
 		return user;
 	}
 

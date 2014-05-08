@@ -55,6 +55,10 @@
         <activity
             android:name="com.activity.index.LoginActivity"
             android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.activity.company.historical.HistoricalActivity"
@@ -74,11 +78,6 @@
             android:launchMode="singleTop"
             android:theme="@style/Theme.TitleBar"
             android:windowSoftInputMode="stateAlwaysHidden" >
-           <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.activity.schedule.ScheduleActivity"

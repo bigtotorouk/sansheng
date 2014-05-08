@@ -162,6 +162,10 @@ public class ReapActivity extends CommonActivity implements OnClickListener {
 			setHome();
 		}
 
+		
+		findViewById(R.id.tab1).setOnClickListener(this);
+		findViewById(R.id.tab2).setOnClickListener(this);
+		findViewById(R.id.tab1).setSelected(true);
 	}
 
 	private void initShopRoom() {
@@ -442,6 +446,20 @@ public class ReapActivity extends CommonActivity implements OnClickListener {
 			// currentMode = 1;
 			// }
 			// }
+			break;
+		case R.id.tab1:
+			findViewById(R.id.tab1).setSelected(true);
+			findViewById(R.id.tab2).setSelected(false);
+			setHome();
+			currentMode = 0;
+			payType = "1";
+			break;
+		case R.id.tab2:
+			findViewById(R.id.tab1).setSelected(false);
+			findViewById(R.id.tab2).setSelected(true);
+			setRoom();
+			currentMode = 1;
+			payType = "0";
 			break;
 
 		}

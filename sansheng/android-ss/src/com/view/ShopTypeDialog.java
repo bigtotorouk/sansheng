@@ -48,13 +48,23 @@ public class ShopTypeDialog extends Dialog {
 
 	public ShopTypeDialog(Context context, TransOrder c) {
 
-		super(context, R.style.NOTitleDialog);
+		super(context, R.style.Translucent_NoTitle);
 		this.order = c;
 		dialog = this;
 		setContentView(R.layout.layout_shop_type);
 		LayoutInflater layoutInflater = getLayoutInflater();
 		btnLingshou = (Button) findViewById(R.id.Btn_Lingshou);
 		btnFiuxiao = (Button) findViewById(R.id.Btn_Fu);
+		findViewById(R.id.close).setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				if(dialog.isShowing()){
+					dialog.dismiss();
+				}
+				
+			}
+		});
 	}
 
 }

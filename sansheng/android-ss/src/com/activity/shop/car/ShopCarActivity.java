@@ -70,7 +70,7 @@ public class ShopCarActivity extends CommonActivity implements OnClickListener {
 	private View layout_alert;
 	private Button btnBackShop;
 	private TextView tvCarAlert;
-	ShopService shopService;
+	ShopService shopService = new ShopService();
 	BtnTab tabHome, tabRoom;
 
 	@Override
@@ -301,19 +301,34 @@ public class ShopCarActivity extends CommonActivity implements OnClickListener {
 
 	private void delete(final String str) {
 		ProgressDialogUtil.show(activity, "提示", "正在删除", true, true);
-		new Thread() {
+		/*new Thread() {
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
 				super.run();
+				
+				
+			}
+		}.start();*/
+		lvShopCar.post(new Runnable() {
+			
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
 				Map<String, String> p = new HashMap<String, String>();
 				p.put("userid", activity.getOrderUserId());
 				p.put("cartid", str);
 				p.put("clear", "0");
 				p.put("ordertype", shopCarLingShouAdapter.getCurrentMode() + "");
 				ViewCommonResponse resp = shopService.deleteShop(p);
+				if(resp.getRetcode()==0){
+					//Toast.makeText(ShopCarActivity.this, "删除商品成功", Toast.LENGTH_SHORT).show();
+					iniFuxiaoData();
+				}else {
+					Toast.makeText(ShopCarActivity.this, "删除商品失败", Toast.LENGTH_SHORT).show();
+				}
 			}
-		}.start();
+		});
 		ProgressDialogUtil.close();
 	}
 
@@ -393,7 +408,7 @@ public class ShopCarActivity extends CommonActivity implements OnClickListener {
 			List<Product> dataProduct = shopCarFuxiaoAdapter.getProducts();
 			for (int i = 0; i < dataProduct.size(); i++) {
 				Product dp = dataProduct.get(i);
-				Product product = shopCarFuxiaoAdapter.findById(dp.getId());
+				Product product = shopCarFuxiaoAdapter.findById(dp.getCartid());
 				product.setMun(dp.getMun());
 			}
 

@@ -9,6 +9,7 @@ import org.json.JSONObject;
 import android.graphics.Paint.Join;
 
 import com.sansheng.model.User;
+import com.util.AESOperator;
 import com.util.Constance;
 
 /**
@@ -24,22 +25,23 @@ public class LoginApi extends CommonApi {
 	public static HttpCommonResponse Login(User user, String deviceInfo) {
 		HttpCommonResponse commonResponse = null;
 		Map<String, String> nvs = toNV(user, deviceInfo);
-		commonResponse = HttpUtil.doPost(url, nvs);
+		commonResponse = HttpUtil.post(url, nvs);
 		System.out.println(commonResponse);
 		return commonResponse;
 	}
 
 	public static Map<String, String> toNV(User user, String devicesInfo) {
 		Map<String, String> p = new HashMap<String, String>();
-		//p.put("username", "" + user.getUsername());
-		p.put("username", "00000000");
-		//p.put("password", user.getPassword());
-		p.put("password", "yft123456");
+		p.put("username", "" + user.getUsername());
+		//p.put("username", "nba001");
+		String password = user.getPassword();
+		p.put("password", user.getPassword());
+		//p.put("password", "BoJ+C5v8gcFAUKJ62duWRw==");
 		p.put("logintype", "" + user.getLogintype());
-		//p.put("terminalinfo", devicesInfo);
-		p.put("terminalinfo", "clientversion");
-		//p.put("token", user.getToken());
-		p.put("token", "0");
+		p.put("terminalinfo", devicesInfo);
+		//p.put("terminalinfo", "clientversion");
+		p.put("token", user.getToken());
+		//p.put("token", "0");
 		p.put("istoken", "2");
 		return p;
 	}
